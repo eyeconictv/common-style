@@ -1,7 +1,6 @@
 .website {
   font-size: 18px;
   color: #555;
-  background-color: $lighter-gray;
   background-attachment: fixed;
   line-height: 1.7;
   h1, h2, h3, h4 {
@@ -77,10 +76,15 @@
 }
 
 .navbar-website {
+  z-index: 9999;
   padding: 16px 0 !important;
   border-bottom: none;
   height: 76px;
   font-size: 16px;
+  margin-bottom: 0;
+  &.isSticky {
+    border-bottom: 1px solid $lighter-gray;
+  }
   .container {
     margin: 0 auto;
   }
@@ -112,15 +116,8 @@
   }
 }
 
-.is-sticky {
-  .navbar-website {
-    padding: 8px 0;
-    border-bottom: 1px solid $lighter-gray;
-  }
-}
-
 .home-banner {
-  padding: 144px 0 144px 0;
+  padding: 128px 0 144px 0;
   background: #FFF;
   overflow: hidden;
   .container {
