@@ -364,8 +364,10 @@
     p {padding: 16px;}
   }
   &.row:hover {
-    .offer-box {
-      background-color: lighten($rise-green,44%);
+    @media (min-width: 768px) {
+      .offer-box {
+        background-color: lighten($rise-green,44%);
+      }
     }
   }
   .offer-box {
@@ -952,10 +954,11 @@
   font-size: 14px;
   display: block;
   font-weight: 500;
-  padding: 4px 16px;
-  margin-top: -32px;
+  padding: 16px;
+  margin-top: -64px;
   margin-bottom: 16px;
   line-height: 22px;
+  position: relative;
   &:hover {
     background-color:lighten($rise-green,5%);
     color: #FFF;
