@@ -34,9 +34,6 @@
   p {
     font-weight: 400;
   }
-  &.activeSticky {
-    margin-top: 77px;
-  }
   .content-box-body {
     padding: 32px;
   }
@@ -85,8 +82,12 @@
   height: 76px;
   font-size: 16px;
   margin-bottom: 0;
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  top: 1px;
   &.isSticky {
-    border-bottom: 1px solid $lighter-gray;
+    border-bottom: 1px solid $light-gray;
   }
   .container {
     margin: 0 auto;
@@ -120,7 +121,7 @@
 }
 
 .home-banner {
-  padding: 128px 0 144px 0;
+  padding: 204px 0 144px 0;
   background: #FFF;
   overflow: hidden;
   .container {
@@ -617,7 +618,7 @@
 .page-header {
   background: #FFF;
   border: none;
-  padding-top: 48px;
+  padding-top: 124px;
   padding-bottom: 16px;
   margin: 0;
   @media (max-width: 768px) {
