@@ -419,37 +419,41 @@
 }
 
 
-.couponEntry {
+.couponEntry
+{
   margin: 0 10px;
+  .alert
+  {
+    margin-bottom: 10px;
+    padding: 5px 15px;
 
-    .alert {
-      padding: 5px 15px;  
-      margin-bottom: 10px;
-      text-align: center;  
-
-        span {
-          display: inline
-          }
+    text-align: center;
+    span
+    {
+      display: inline;
     }
+  }
+  input
+  {
+    display: inline-block;
 
-    input {
-      width: 150px;
-      display: inline-block;
-    }
+    width: 150px;
+  }
 }
 
-.couponStart .col-md-12 {
+.couponStart .col-md-12
+{
   text-align: right;
 }
 
 
-table.subtotals {
-
-    text-align:right;
-
-    .btn {
-        margin-right: 5px;
-    }
+table.subtotals
+{
+  text-align: right;
+  .btn
+  {
+    margin-right: 5px;
+  }
 }
 
 
