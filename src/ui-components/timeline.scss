@@ -1,107 +1,75 @@
 .timeline {
   .control-label {
-  	font-weight: normal;
+  	font-weight: 500;
   }
-  .input-group-btn {
-  	.btn {
-  	  height: 34px;
-  	}
-  }
-  section {
-  }
-  .form-group {
-    margin-bottom: 10px;
-  }
-  .add-bottom {
-  }
-  label {
-  }
-}
-
-.time-picker {
-  .btn-default {
-    margin-left: 2px;
-    height: 34px;
-    color: $gray;
-  }
-  td.form-group {
-    padding: 0;
-  }
-  td {
-    padding: 0 3px;
-  }
-  .btn-link {
-    padding: 0 10px;
-    margin: 0 0 3px 0;
-    line-height: 10px;
-    .glyphicon {
-      font-size: 11px;
-      &:before {
-        color:#bcbcbc;
-        vertical-align: middle; 
+  .dropdown-menu {
+    padding:5px;
+    li {
+      overflow: hidden;
+      padding: 5px !important;
+      .btn {
+        @extend .btn-default;
+        margin: 0;
+      }
+    }
+    * {
+      outline: 0;
+      &:focus {
+        outline: 0;
+      }
+    }
+    table {
+      border-collapse: separate;
+      border-spacing: 1px;
+      thead tr:last-child th {
+        font-weight: 400;
+        padding: 5px 0;
+      }
+      tbody {
+        .btn {
+          border: none;
+          border-radius: 0;
+        }
       }
     }
   }
 }
 
-.date-picker {
-  * {
-    outline: 0;
-    &:focus {
-      outline: 0;
-    }
-  }
-  .datepicker-button-bar {
-    margin:0;
-    overflow: hidden;
-    padding: 5px 5px 0;
-  }
-}
-
-
-/* ==========================================================================
-  OLD Styles
-  ========================================================================== */
-
-.timeline-settings {
-  section {
-    .control-label {
-      font-weight: normal;
-    }
-  }
-  .set-recurrence {
-    display: table;
-    width: 100%;
-    label {
-      display: table-cell;
-    }
-  }
-}
-
-.recurrence-option, .timelineSeconds {
-  * {
+.recurrence-option {
+  .form-control {
+    margin: 0 5px;
     display: inline-block;
   }
-  label {
-    &:first-child {
-    }
+  .control-label {
+    display: inline-block;
   }
-  input[type=text] {
+  .input-short {
     width: 40px;
-    font-size: 13;
-    padding: 6px 0;
-    text-align: center;
   }
-  select {
-    width: auto;
-  }
-  .form-group {
-    display: block;
+  .text-danger {
+    margin-top: 15px;
   }
   .timelineWeekdays {
-    label {
-    display: block;
-    width: auto;
-  }
+    .control-label {
+      display: block;
+    }
   }
 }
+
+.time-picker {
+  .btn-link {
+    padding: 0;
+    line-height: 12px;
+    font-size: 12px;
+    span {
+      line-height: normal;
+    }
+  }
+  .form-control {
+    margin: 0;
+  }
+  .btn {
+    margin-left: 5px;
+  }
+}
+

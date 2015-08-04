@@ -27,9 +27,14 @@ body {
 /**    
 * Start of workaround for Bootstrap bug where content shifts when modal   
 * is opened.
-*   
+
 * https://github.com/twbs/bootstrap/issues/9855   
-*/    
+*/
+
+body.modal-open {
+    overflow: hidden;
+}
+
 html {   
   -ms-overflow-style: scrollbar;   
 }    
