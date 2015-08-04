@@ -43,6 +43,13 @@
   .control-label {
     display: inline-block;
   }
+  fieldset {
+    display: inline-block;
+  }
+  select {
+    width: 90px;
+    display: inline-block;
+  }
   .input-short {
     width: 40px;
   }
