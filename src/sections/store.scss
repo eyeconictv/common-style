@@ -423,5 +423,151 @@
   text-align: right;
 }
 
+/* COMPACT BANNER */
+
+.tiny-hero
+{
+  width: 100%;
+  height: 95px;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  color: #042c15;
+  background: #f5f6f8 bottom center;
+  background-color: #f00;
+  background-image: url('img/featured_splash_tiny.jpg');
+  background-size: cover;
+  p
+  {
+    width: 33%;
+    height: 100%;
+    margin-bottom: 0;
+    padding: 12px;
+  }
+}
+
+@media (max-width: $screen-md)
+{
+  .tiny-hero
+  {
+    background-position: 37%;
+    p
+    {
+      width: 45%;
+    }
+  }
+}
+
+
+@media (max-width: $screen-sm)
+{
+  .tiny-hero
+  {
+    background-position: 31%;
+    p
+    {
+      width: 55%;
+    }
+  }
+}
+
+@media (max-width: 566px)
+{
+  .tiny-hero
+  {
+    background-position: 91%;
+    background-position-y: 402%;
+    background-size: 245% 93%;
+    p
+    {
+      @extend .gradient-green-vertical;
+      width: 100%;
+      color: #fff;
+    }
+  }
+}
+
+
+
+
+
+/* FEATURED PRODUCT HERO */
+
+.featured-hero
+{
+  position: relative;
+
+  width: 100%;
+  height: 408px;
+  margin-top: 19px;
+
+  cursor: pointer;
+
+  border: 1px solid #0bd397;
+  background: #f5f6f8 center center;
+  background-image: url('img/featured_splash_3.jpg');
+  h1
+  {
+    font-size: 44px;
+    font-weight: 300;
+
+    color: #006f23;
+  }
+  .btn
+  {
+    border: 1px solid #00ff03;
+  }
+  div
+  {
+    @extend .gradient-green-angled;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 28%;
+    height: 100%;
+    padding: 33px;
+
+  }
+}
+
+
+@media (max-width: $screen-md)
+{
+  .featured-hero
+  {
+    background: #f5f6f8 70% center;
+    background-image: url('img/featured_splash_3.jpg');
+    div
+    {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: $screen-sm)
+{
+  .featured-hero h1
+  {
+    line-height: 44px;
+  }
+}
+
+@media (max-width: $screen-xs)
+{
+  .featured-hero
+  {
+    background-image: url('img/featured_splash_3.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 168% auto;
+    div
+    {
+      width: 100%;
+      
+    }
+  }
+}
 
 
