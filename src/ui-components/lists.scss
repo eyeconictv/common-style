@@ -10,6 +10,11 @@
   min-height: 240px;
 }
 
+.content-box {
+  overflow: hidden;
+  position: relative;
+}
+
 .scrollable-list::-webkit-scrollbar {
     -webkit-appearance: none;
 }
