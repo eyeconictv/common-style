@@ -90,8 +90,6 @@ a:hover {
   .navbar-nav {
     > a {
       border: #fff solid 1px;
-
-      /* Visual */
       font-weight: bold;
     }
 
@@ -99,10 +97,7 @@ a:hover {
     > .active > a,
     > .active > a:hover,
     .active > a:focus {
-      /* Display & Box Model */
       border: 1px solid $light-gray;
-
-      /* Visual */
       color: $rise-blue;
       background-color: $lighter-gray;
     }
@@ -933,7 +928,6 @@ a.btn-primary:hover {
 .content-box {
   @extend .panel;
   /* Positioning */
-  position: relative;
   border: 1px solid #CCC;
   background: #FFF;
 }
