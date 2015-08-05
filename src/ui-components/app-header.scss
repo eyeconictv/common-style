@@ -1,7 +1,9 @@
 .app-header {
   @include make-row;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
   .title-block {
     @include make-sm-column(6);
     h1 {
@@ -15,6 +17,7 @@
       vertical-align: text-bottom;
     }
   }
+
   .global-actions {
     @include make-sm-column(6);
     text-align: right;
@@ -34,6 +37,7 @@
         }
       }
     }
+
     @media (max-width: 768px) {
       margin-top: 10px;
       .btn {
