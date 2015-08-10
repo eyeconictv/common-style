@@ -43,3 +43,31 @@
     color:$rise-green;
   }
 }
+
+.display-name {
+  span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 180px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    @media (max-width: 992px) {
+    }
+  }
+}
+
+.display-address {
+  span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 500px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    @media (max-width: 992px) {
+      width: 240px;
+    }
+  }
+}
