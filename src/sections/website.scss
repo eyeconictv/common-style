@@ -353,13 +353,7 @@
     h3 {margin: 0;}
     p {padding: 16px;}
   }
-  &.row:hover {
-    @media (min-width: 768px) {
-      .offer-box {
-        background-color: lighten($rise-green,44%);
-      }
-    }
-  }
+  
   .offer-box {
     border: 1px solid $light-gray;
     padding: 16px;
