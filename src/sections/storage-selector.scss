@@ -29,22 +29,12 @@
   border: 0px;
   padding: 0px 0px 50px;
   background-color: #f4f4f4;
-  margin-top: -20px;
+  margin-top: 0;
   overflow: auto;
   @media (max-width: 768px) {
     position: relative;
     padding: 0px;
   }
-}
-
-iframe.modal-dialog {
-  border:0;
-  width: 100%;
-  height:500px;
-  padding:5px;
-  background-color:#f4f4f4;
-  margin: 0px;
-  padding: 5px;
 }
 
 .table.filetable td {
