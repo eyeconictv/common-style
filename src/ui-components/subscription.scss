@@ -7,10 +7,15 @@
   padding: 6px 7px;
 
   text-align: center;
-  span
+  > span
   {
     position: relative;
     top: 2px;
+  }
+  .btn span
+  {
+    position: relative;
+    top: 0;
   }
   &.trial
   {
