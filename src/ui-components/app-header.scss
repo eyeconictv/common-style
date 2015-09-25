@@ -2,7 +2,6 @@
   @include make-row;
   position: relative;
   padding-bottom: 20px;
-  padding-top: 20px;
   .title-block {
     @include make-sm-column(6);
     h1 {
