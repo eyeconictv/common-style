@@ -407,43 +407,7 @@ a.btn-primary:hover {
   }
 }
 
-/* Glyphicon buttons
-   ========================================================================== */
-.btn-box {
-  /* Positioning */
-  position: relative;
 
-  /* Display & Box Model */
-  /* TODO: See about moving this to some sort of SASS extend. */
-  display: block;
-  padding: 3px 10px;
-  border: 1px solid #fff;
-
-  /* Visual */
-  text-align: center;
-
-  .fa::before ,
-  .glyphicons::before{
-    line-height: 30px;
-  }
-
-  &:hover {
-    @extend .button-hover;
-  }
-}
-/* (?) button to display a tooltip for help info
-   Assumes use of glyphicon circle_question_mark
-   Is to be used with .btn and .btn-link classes */
-.btn-help {
-  /* Display & Box Model */
-  padding: 0 5px 2px 5px;
-  /* Visual */
-  .fa::before,
-  .glyphicons::before {
-    /* Visual */
-    font-size: 18px;
-  }
-}
 
  /* SVG CLASSES */
 
