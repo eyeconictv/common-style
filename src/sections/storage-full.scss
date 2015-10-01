@@ -1,14 +1,4 @@
-.storage-full {
-  .notifications {
-    margin: 0px 5px;
-  }
-  .toolbar {
-    margin: 10px 0;
-  }
-  .rotating-text {
-    color: #777;
-    margin-left: 5px;
-  }
+.storage-full, .storage-modal {
   .table-2 {
     .folder,.file {
       &:before {
@@ -39,6 +29,22 @@
         border-left: 1px solid #ccc;
       }
     }
+  }
+  .notifications {
+    margin: 0px 5px;
+  }
+  .toolbar {
+    margin: 10px 0;
+  }
+  .rotating-text {
+    color: #777;
+    margin-left: 5px;
+  }
+}
+
+.storage-full {
+  .scrollable-list {
+    max-height: calc(100vh - 340px);
   }
 }
 
