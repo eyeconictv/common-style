@@ -1,78 +1,24 @@
 .storage-modal {
-  padding:  15px;
   .scrollable-list {
-    max-height: calc(100vh - 340px);
+    max-height: calc(100vh - 140px);
   }
-  h3 {
-    margin-top: 0;
-  }
-  .table-2 {
-  > tbody > tr > td {
-    strong {font-weight: 500}
-    .fa {font-size: 20px; line-height: 20px; vertical-align: top;}
-    span {display: inline-block;}
-  }
-  > tbody > tr > td:first-child {
-      input {display: inline-block;}
-      .fa {margin-right: 3px;}
-      span a {
-        display: inline-block;
-        vertical-align: middle;
-        overflow: hidden;
-      }
-      @media (max-width: 480px) {
-        span a {
+  .selector-header {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+    p {
+      line-height: 16px;
+      margin: 0;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: middle;
+        &:first-child {
+          display:block;
         }
       }
     }
-  }
-
-.folder {
-  td {}
-}
-
-tr.blocked-file {
-  >td {
-  background: #f7f7f7;
-  cursor: pointer;
-  position: relative;
-    .callout {
-      top:45px;
-      left: 0;
-    }
-  }
-}
-
-  tr {
-    td {
-      a {color: $gray}
-    }
-  }
-
-.icon-nav {
-  padding-bottom: 1px;
-}
-
-.selector-header {
-  margin-bottom: 10px;
-  margin-top: 15px;
-  overflow: hidden;
-  p {
-    line-height: 16px;
-    margin: 0;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    white-space: nowrap;
-    display: inline-block;
-    vertical-align: middle;
-    &:first-child {display:block;}
-  }
-  @media (max-width: 768px) {
-    .icon-nav {
-      .btn {margin-left: -4px;}
-    }
-  }
-}
 
   /* ==========================================================================
      Buttons

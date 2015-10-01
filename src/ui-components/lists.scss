@@ -12,6 +12,9 @@
 .content-box {
   overflow: hidden;
   position: relative;
+  .scrollable-list {
+    border: none;
+  }
 }
 
 .scrollable-list::-webkit-scrollbar {
@@ -36,12 +39,6 @@
     background-color: $lighter-gray; 
     border-radius: 2px; 
 } 
-
-.content-box {
-  .scrollable-list {
-    border: none;
-  }
-}
 
 /* List-Group
    ========================================================================== */

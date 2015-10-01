@@ -26,14 +26,10 @@
   }
 }
 
-iframe {
-  height: calc(100vh - 240px);
-  overflow-x: hidden;
-  overflow-y: scroll;
-} 
-
 iframe.modal-dialog {
   border: none;
   margin: 0;
   width: 100%;
+  height: calc(100vh - 140px);
+  overflow: hidden;
 }
