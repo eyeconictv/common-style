@@ -143,6 +143,29 @@
   }
 }
 
+.signup-counters {
+  text-align: center;
+  margin-top: 24px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+  .counter {
+    margin-bottom: 16px;
+    p {
+      margin: 0;
+      font-weight: 300;
+      font-size: 28px;
+      color: $rise-green;
+    }
+    span {
+      font-size: 12px;
+      display: block;
+      color: #999;
+      font-weight: 500;
+    }
+  }
+}
+
 /* Company Selector
    ========================================================================== */
 .company-search {
