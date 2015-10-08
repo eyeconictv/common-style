@@ -44,6 +44,7 @@
         height: 33px;
         border-radius: 4px;
         vertical-align: top;
+        margin-left: 10px;
       }
     }
     .navbar-left {
@@ -77,6 +78,90 @@
         display: block;
         line-height: 12px;
       }
+    }
+  }
+}
+
+/* Signup Modal
+   ========================================================================== */
+
+.signup-modal {
+  h1 {
+    font-size: 44px;
+    font-weight: 300;
+    margin-top: 48px;
+    &+.text-muted {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.signup-offer {
+  margin-top: 48px;
+  .widgets-offer {
+    li {
+      background: $lighter-gray;
+      display: inline-block;
+      width: 85px;
+      height: 85px;
+      vertical-align: top;
+      padding: 5px;
+      border-radius: 4px;
+      img {
+        width: 36px;
+      }
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        color: #666;
+        display: block;
+        line-height: 14px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.registration-modal {
+  label {
+    font-weight: 500;
+    font-size: 15px;
+    span {
+      color: #666;
+      font-weight: 400;
+      font-size: 14px;
+      margin-left: 5px;
+    }
+  }
+  .checkbox {
+    label {
+      font-size: 14px;
+      color: #666;
+      font-weight: 400;
+    }
+  }
+}
+
+.signup-counters {
+  text-align: center;
+  margin-top: 24px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+  .counter {
+    margin-bottom: 16px;
+    p {
+      margin: 0;
+      font-weight: 300;
+      font-size: 28px;
+      color: $rise-green;
+    }
+    span {
+      font-size: 12px;
+      display: block;
+      color: #999;
+      font-weight: 500;
     }
   }
 }
@@ -157,11 +242,15 @@
       span {
         display: block;
         line-height: 16px;
-        font-size: 14px;
+        font-size: 13px;
         text-align: right;
         white-space: nowrap;
         overflow: hidden;
         text-overflow:ellipsis;
+        &.pending-registration {
+          line-height: 32px;
+          display: none;
+        }
       }
       strong {
         font-size: 12px;
@@ -169,56 +258,47 @@
       }
     }
   }
+  .google-account {
+    margin: 15px;
+    line-height: 32px;
   }
-  .dropdown-header {
-    color: #555;
-    padding: 10px;
-    &.sub-company-header {
-      background: #f8e4e2;
-    }
-    p {
-      line-height: 18px;
-      margin: 0;
-      font-size: 13px;
-      overflow: hidden;
-      @media (max-width: 480px) {
-        strong {
-          text-overflow:ellipsis;
-          display: block;
-          overflow: hidden;
-          max-width: 260px;
-        }
-        a {
-          display: block;
-          margin-top:5px;
-        }
-        .text-muted {
-          display: none;
-        }
+}
+
+.dropdown-header {
+  color: #555;
+  padding: 10px;
+  &.sub-company-header {
+    background: #f8e4e2;
+  }
+  p {
+    line-height: 18px;
+    margin: 0;
+    font-size: 13px;
+    overflow: hidden;
+    @media (max-width: 480px) {
+      strong {
+        text-overflow:ellipsis;
+        display: block;
+        overflow: hidden;
+        max-width: 260px;
+      }
+      a {
+        display: block;
+        margin-top:5px;
+      }
+      .text-muted {
+        display: none;
       }
     }
   }
-  .dropdown-footer {
-    padding: 15px;
-    text-align: right;
-    border-top: 1px solid #e6e6e6;
-  }
-  @media (max-width: 480px) {
-    .user-id {
-     
-    }
-  }
-
-.signup-modal {
-  font-size: 18px;
-  line-height: 1.7;
-  h2 {
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 300;
-    margin-top: 0;
-  }
 }
+
+.dropdown-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e6e6e6;
+}
+
 
 .actions-nav {
   > li > a .label {

@@ -1,3 +1,5 @@
+$google-red: #D50F25;
+
 .btn {
   outline:0;
 }
@@ -26,6 +28,10 @@
 
 .btn-primary {
   @include button-variant($white, $rise-green, $rise-green, $btn-default-border-disabled, darken($rise-green, 10%), lighten($rise-green, 5%));
+}
+
+.btn-google-auth {
+  @include button-variant($white, $google-red, $google-red, $btn-default-border-disabled, darken($google-red, 10%), lighten($google-red, 5%));
 }
 
 .btn-white {
