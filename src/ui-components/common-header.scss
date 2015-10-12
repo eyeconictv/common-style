@@ -24,6 +24,8 @@
         >a {
           display: block;
           padding: 0;
+          margin-left: 10px;
+          font-size: 24px;
           &:hover {}
           &:focus {}
           >.fa {
