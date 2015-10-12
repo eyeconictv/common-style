@@ -1,8 +1,9 @@
 .filters {
     margin-top: 20px;
+    margin-right: 20px;
     text-align: center;
     .btn-default {
-        width: 142px !important;
+        width: 140px !important;
         margin-top: 7px;
         border: 0;
         border-bottom: 3px solid #eaeaea;
@@ -24,6 +25,12 @@
     }
     .btn-default:hover {
         background-color: #eee;
+    }
+    &.container{
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 8px;
+        width: 1157px;
     }
 }
 
