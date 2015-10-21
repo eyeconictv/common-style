@@ -2,6 +2,10 @@
   white-space: nowrap;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -39,19 +43,10 @@
   vertical-align: middle;	
 }
 
-.clickable {
-  cursor: pointer;
-}
-
 .app-navigation svg {
-  width: 32px;
-  height: 32px;
-  margin: 0;
-}
-
-svg {
-  width: 64px;
-  height: 64px;
+  width: 24px;
+  height: 24px;
+  background: red;
 }
 
 .app-navigation path:first-child {
