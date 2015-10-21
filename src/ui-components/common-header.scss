@@ -1,4 +1,5 @@
 .navbar {
+  background: #FFF;
   margin-bottom: 0;
   padding: 10px 0;
   border-bottom: none;
@@ -58,28 +59,60 @@
 }
 
 .app-navigation {
-  width: 240px;
-  >li {
-    overflow: hidden;
+  &:after {
+    border-bottom-color: $rise-green !important;
   }
-  .menu-box {
-    width: 50%;
-    text-align: center;
+  width: 240px;
+  li {
+    display: block;
+    .image {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      img {
+        width: 100%;
+      }
+    }
+    &:hover {
+      background: rgba(150,150,150,.1);
+      a {
+        background: none !important;
+      }
+    }
     a {
+      line-height: 24px !important;
+      border-radius: 0 !important;
+      padding: 15px !important;
       display: block;
-      color: $dark-gray;
-      padding: 10px;
-      &:hover {
-        background: #f5f5f5;
+    }
+    span {
+      vertical-align: top;
+      line-height: 24px;
+      margin-left: 5px;
+      display: inline-block;
+    }
+  }
+  .new-apps-intro {
+    background: $rise-green;
+    padding: 15px;
+    color: #FFF;
+    &:hover {
+      background: $rise-green;
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 4px;
+      &+p {
+        margin-bottom: 0;
       }
-      svg {
-        width: 24px;
-        height: 24px;
-      }
-      span {
-        display: block;
-        line-height: 12px;
-      }
+    }
+  }
+  .new-app {
+    .new-app-link {
+      display: inline-block;
+      float: right;
+      color: $rise-green;
+      font-weight: 600;
     }
   }
 }

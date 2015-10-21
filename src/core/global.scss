@@ -33,13 +33,9 @@ a:hover {
   text-decoration: none;
 }
 
-body.intercom-messenger-active {
-  @media (min-width: 1200px) {
-    width: calc(100% - 368px);
-  }
+#intercom-container .intercom-sheet {
+  z-index: 1041 !important;
 }
-
-
 
 .intercom-launcher {
   bottom: 80px !important;
