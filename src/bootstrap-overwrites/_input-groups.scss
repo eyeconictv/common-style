@@ -14,9 +14,16 @@
   border-radius: $border-radius-base2;
 }
 
-.form-group .form-control-feedback {
-  top: 34px;
+.form-group {
+  .form-control-feedback {
+    top: 34px;
+  }
+  label span {
+    color: red;
+    margin-left: 4px;
+  }
 }
+
 
 .form-inline .form-control-static {
   display:inline-block;
