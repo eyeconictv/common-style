@@ -6,26 +6,32 @@
   .navbar-header {
     height: auto;
     li {
+      margin-right: 0;
       vertical-align: top;
       >a {
         line-height: 33px;
+        font-size: 13px;
         padding: 0;
+        margin-right: 3px;
         border-radius: 3px;
         white-space: nowrap;
+        &.selected {
+          color: $rise-blue;
+        }
       }
     }
     .navbar-brand {
-      margin-right: 10px;
+      margin-right: 0;
     }
     .navbar-right {
       margin:0;
       >li {
         display: inline-block;
-        margin-left: 8px;
+        margin-left: 5px;
         >a {
           display: block;
           padding: 0;
-          margin-left: 10px;
+          margin-left: 0;
           font-size: 24px;
           &:hover {}
           &:focus {}
@@ -34,12 +40,6 @@
             line-height: 33px;
             padding: 0 10px;
           }
-        }
-        >button {
-          .fa {
-          }
-        }
-        &.dropdown {
         }
       }
       .profile-pic {
@@ -51,8 +51,9 @@
       }
     }
     .navbar-left {
+      margin-left: 0;
       a {
-        padding: 0 10px;
+        padding: 0 5px;
       }
     }
   }
