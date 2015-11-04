@@ -437,10 +437,10 @@
 
   text-align: center;
 
-  color: #042c15;
+  color: #fff;
   background: #f5f6f8 bottom center;
   background-color: #FFF;
-  background-image: url('img/featured_splash_tiny.jpg');
+  background-image: url('../img/featured_tiny_stocktrack.jpg');
   background-size: cover;
   p
   {
@@ -448,6 +448,11 @@
     height: 100%;
     margin-bottom: 0;
     padding: 12px;
+    line-height: 17px;
+  }
+  .btn 
+  {
+    margin-top: 4px;
   }
 }
 
@@ -485,7 +490,7 @@
     background-size: 245% 93%;
     p
     {
-      @extend .gradient-green-vertical;
+      @extend .gradient-blue-vertical;
       width: 100%;
       color: #fff;
     }
@@ -509,14 +514,18 @@
   cursor: pointer;
 
   border: 1px solid #0bd397;
-  background: #f5f6f8 center center;
-  background-image: url('img/featured_splash_3.jpg');
+  background: #717e84 center center;
+  background-image: url('../img/featured_splash_stocktrack.jpg');
   h1
   {
     font-size: 44px;
     font-weight: 300;
 
-    color: #006f23;
+    color: #fff;
+  }
+   p
+  {
+    color: #fff;
   }
   .btn
   {
@@ -524,7 +533,7 @@
   }
   div
   {
-    @extend .gradient-green-angled;
+    @extend .gradient-blue-angled;
     position: absolute;
     top: 0;
     left: 0;
@@ -541,8 +550,8 @@
 {
   .featured-hero
   {
-    background: #f5f6f8 70% center;
-    background-image: url('img/featured_splash_3.jpg');
+    background: #717e84 70% center;
+    background-image: url('../img/featured_splash_stocktrack.jpg');
     div
     {
       width: 50%;
@@ -562,7 +571,7 @@
 {
   .featured-hero
   {
-    background-image: url('img/featured_splash_3.jpg');
+    background-image: url('../img/featured_splash_stocktrack.jpg');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 168% auto;
