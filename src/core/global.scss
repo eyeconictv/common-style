@@ -152,7 +152,7 @@ a:hover {
    ========================================================================== */
 
 /* Input field focus */
-input:focus {
+textarea, input, div, input:focus {
   outline: none;
 }
 
