@@ -32,6 +32,31 @@
   }
 }
 
+/* Widget Settings */
+/* Store Status Warning Button inside settings */
+.btn-subscribe-now {
+  border: 1px solid $rise-green;
+  color:$rise-green;
+  background-color: transparent;
+}
+
+.btn-subscribe-now:hover {
+  color:$rise-green;
+}
+
+/* Selected Storage Items */
+.selected-storage-item {
+  color:$dark-gray;
+}
+
+.selected-storage-item:hover {
+  color:$dark-gray;
+}
+
+.input-group-width {
+  width:100%; 
+}
+
 .widget {
   height: 100%;
 
