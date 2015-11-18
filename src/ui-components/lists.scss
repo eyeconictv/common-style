@@ -106,7 +106,7 @@
   .grid-list-image {
     background: $light-gray;
     max-width: 100%;
-    height: 150px;
+    height: 180px;
     text-align: center;
     font-size: 0;
     overflow: hidden;
@@ -136,6 +136,10 @@
       width: 100%;
       }
     }
+    h4#productName {
+      min-height: 36px;
+    }
+
   .content-box {
     margin: 8px;
     padding: 8px;
