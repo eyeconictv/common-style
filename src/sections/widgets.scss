@@ -33,23 +33,30 @@
 }
 
 /* Widget Settings */
-/* Selected Storage Items */
-.selected-storage-item {
-  color:$dark-gray;
-  max-width: 620px;
-}
-
-.selected-storage-item:hover {
-  color:$dark-gray;
-}
-
-.input-group-size {
-  width:100%;
-  line-height: 30px;
-}
-
+/* Size for Storage Icon */
 .storage-selector-icon {
-  height:20px;
+  height:14px;
+}
+
+/* Storage Input Field*/
+.clear-file:not(:first-child):not(:last-child) {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left:none;
+}
+
+.preview-file {
+  padding:0; 
+  padding-left:10px;
+  background:transparent; 
+  border:none;
+}
+
+/* Storage Subscription Status */
+.storage-status {
+  text-align: left;
+  border: none !important;
+  background-color: transparent !important;
 }
 
 .widget {
