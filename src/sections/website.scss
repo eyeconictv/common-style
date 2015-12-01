@@ -33,6 +33,22 @@
   p {
     font-weight: 400;
   }
+  .navbar-nav li {
+    border-color: transparent;
+  }
+
+  .navbar-nav li a {
+    color: #666 !important;
+  }
+
+  .navbar-nav li a:hover {
+    background: none !important;
+    font-weight: 600;
+  }
+
+  .navbar-default .btn-link {
+    color: #666;
+  }
   .content-box-body {
     padding: 32px;
   }
@@ -1016,22 +1032,7 @@ box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
   padding: 192px 0 128px !important;
 }
 
-.navbar-nav li {
-  border-color: transparent;
-}
 
-.navbar-nav li a {
-  color: #666 !important;
-}
-
-.navbar-nav li a:hover {
-  background: none !important;
-  font-weight: 600;
-}
-
-.navbar-default .btn-link {
-  color: #666;
-}
 .ryan-picture-bg {
     background-image:url('https://s3.amazonaws.com/Rise-Images/Experimental/ryan-webinar.png'); 
     background-size:cover;
