@@ -10,17 +10,24 @@
   color: #fff;
   background: #f5f6f8 bottom center;
   background-color: #FFF;
-  background-image: url('https://s3.amazonaws.com/Store-Products/Featured+Products/featured_tiny_stocktrack.jpg');
+  background-image: url('https://s3.amazonaws.com/Store-Products/Featured+Products/featured_tiny_storagesupportbundle.jpg');
   background-size: cover;
+  background-position: 96%;
   p {
     width: 33%;
     height: 100%;
     margin-bottom: 0;
-    padding: 12px;
+    padding: 6px;
     line-height: 17px;
+    position: relative;
   }
   .btn {
     margin-top: 4px;
+    padding: 2px 12px;
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    transform: translateX(-50%);
   }
 }
 
@@ -38,6 +45,10 @@
     background-position: 31%;
     p {
       width: 55%;
+      padding: 6px;
+    }
+    .btn {
+    padding: 0px 11px;
     }
   }
 }
@@ -68,7 +79,7 @@
   cursor: pointer;
   border: 1px solid #0bd397;
   background: #717e84 center center;
-  background-image: url('https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_stocktrack.jpg');
+  background-image: url('https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_storagesupportbundle.jpg');
   h1 {
     font-size: 44px;
     font-weight: 300;
@@ -87,14 +98,14 @@
     left: 0;
     width: 28%;
     height: 100%;
-    padding: 33px;
+    padding: 13px 31px;
   }
 }
 
 @media (max-width: $screen-md) {
   .featured-hero {
     background: #717e84 70% center;
-    background-image: url('https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_stocktrack.jpg');
+    background-image: url('https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_storagesupportbundle.jpg');
     div {
       width: 50%;
     }
@@ -109,7 +120,7 @@
 
 @media (max-width: $screen-xs) {
   .featured-hero {
-    background-image: url('https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_stocktrack.jpg');
+    background-image: url('https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_storagesupportbundle.jpg');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 168% auto;
