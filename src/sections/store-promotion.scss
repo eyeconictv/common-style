@@ -20,6 +20,7 @@
     padding: 6px;
     line-height: 17px;
     position: relative;
+    @extend .gradient-blue-vertical;
   }
   .btn {
     margin-top: 4px;
@@ -59,7 +60,6 @@
     background-position-y: 402%;
     background-size: 245% 93%;
     p {
-      @extend .gradient-blue-vertical;
       width: 100%;
       color: #fff;
     }
