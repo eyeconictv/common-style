@@ -230,6 +230,17 @@
     padding-left: 10px;
     font-weight: bold;
   }
+  p.validation-notice {
+    font-size: 13px;
+    color: #094F76;
+    line-height: 14px;
+  }
+  .alert-info .form-group {
+    margin-bottom:0;
+  }
+  .alert-info + .row {
+    margin-right:5px;
+  }
 }
 
 
