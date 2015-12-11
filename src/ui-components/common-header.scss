@@ -60,10 +60,7 @@
 }
 
 .app-navigation {
-  &:after {
-    border-bottom-color: $rise-green !important;
-  }
-  width: 240px;
+  width: 190px;
   li {
     display: block;
     .image {
