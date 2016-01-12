@@ -48,7 +48,8 @@
   font-weight: 500;
   span {
     max-width: 240px;
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
