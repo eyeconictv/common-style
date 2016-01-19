@@ -59,3 +59,34 @@
     display: block;
   }
 }
+
+.display-panel {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+
+  .panel-heading {
+    padding: 4px;
+    border-left: 0;
+  }
+
+  h3.panel-title {
+    margin-right: 0;
+  }
+
+  .panel-body {
+    padding: 4px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+}
+
+.download-buttons .row:nth-child(2) {
+  margin-top: 6px;
+
+  img {
+    height: 32px;
+    margin-left: 12px;
+    }
+}
+
