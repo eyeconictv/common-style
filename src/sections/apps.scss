@@ -1,10 +1,31 @@
-.apps-launcher-tour {
-	margin-top: 0;
-	padding: 10px 0;
-	.headline {
-		padding: 20px 0;
+.apps-launcher {
+	text-align: center;
+	font-size: 18px;
+	.apps-launcher-tour {
+		padding: 64px 32px;
+		.content-box {
+			overflow: hidden;
+			margin: 2px;
+			-webkit-box-shadow:0 1px 4px rgba(50, 50, 50, 0.1);
+			-moz-box-shadow:0 1px 4px rgba(50, 50, 50, 0.1);
+			box-shadow:0 1px 4px rgba(50, 50, 50, 0.1);
+		}
+		.headline {
+			h2 {
+				font-weight: 300;
+				font-size: 36px;
+			}
+		}
+		.image {
+			background: #E9FFED;
+			padding: 16px 48px;
+			img {
+				margin: 0 auto;
+			}
+		}
 	}
 }
+
 
 .app-launcher {
 	line-height: 1.6;
