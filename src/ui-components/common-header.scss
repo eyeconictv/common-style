@@ -25,6 +25,9 @@
     }
     .navbar-brand {
       margin-right: 10px;
+      @media (max-width: 768px) {
+        margin-right: 0;
+      }
     }
     .navbar-right {
       margin:0;
