@@ -12211,7 +12211,7 @@ ul.tree ul li:last-child:before {
     padding: 15px; }
   .widget .wrapper {
     /* Positioning */
-    z-index: 2;
+    z-index: 1000;
     /* Display & Box Model */
     height: 99%;
     padding-bottom: 25px;
