@@ -11557,6 +11557,16 @@ a[data-wysihtml5-command=underline].active {
     color: #0081BA; }
   .table-2 > tbody > tr:hover > td a.non-clickable-file {
     color: #555; }
+  .table-2 > tbody > tr:hover.text-clickable-row {
+    cursor: auto; }
+    .table-2 > tbody > tr:hover.text-clickable-row td {
+      color: #0081BA; }
+  .table-2 > tbody > tr:hover > td a {
+    cursor: pointer;
+    display: inline-block;
+    color: #0081BA; }
+  .table-2 > tbody > tr:hover > td a.non-clickable-file {
+    color: #555; }
 
 .table-middle > tbody > tr > td {
   vertical-align: middle; }
