@@ -1,5 +1,5 @@
-$store-featured-tiny-banner-url: "https://s3.amazonaws.com/Store-Products/Featured+Products/featured_tiny_march_madness_2016.jpg";
-$store-featured-splash-banner-url: "https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_march_madness_2016.jpg";
+$store-featured-tiny-banner-url: "https://s3.amazonaws.com/Store-Products/Featured+Products/featured_tiny_storagesupportbundle.jpg";
+$store-featured-splash-banner-url: "https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_storagesupportbundle.jpg";
 
 /* ==========================================================================
    COMPACT BANNER
@@ -11,71 +11,60 @@ $store-featured-splash-banner-url: "https://s3.amazonaws.com/Store-Products/Feat
   margin-bottom: 20px;
   text-align: center;
   color: #fff;
-  cursor:pointer;
   background: #f5f6f8 bottom center;
   background-color: #FFF;
   background-image: url($store-featured-tiny-banner-url);
   background-size: cover;
   background-position: 96%;
-  h1 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 2px;
-  }
-  div {
+  p {
     width: 33%;
     height: 100%;
     margin-bottom: 0;
     padding: 6px;
     line-height: 17px;
     position: relative;
-    background: #3D3437; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(right top, #413036, #2F2F2F); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom left, #413036, #2F2F2F); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom left, #413036, #2F2F2F); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom left, #413036, #2F2F2F); /* Standard syntax (must be last) */
-    font-size: 18px;
+    @extend .gradient-blue-vertical;
   }
   .btn {
+    margin-top: 4px;
     padding: 2px 12px;
     position: absolute;
-    bottom: 8px;
+    left: 50%;
+    bottom: 4px;
     transform: translateX(-50%);
-    color: black;
-    background-color: white;
-  }
-  .fa {
-    margin-left:5px;
-  }
-}
-
-@media (max-width: $screen-lg) {
-  .tiny-hero {
-    background-position: 83%;
   }
 }
 
 @media (max-width: $screen-md) {
   .tiny-hero {
-    background-position: 88%;
-    div {
-      width: 39%;
+    background-position: 37%;
+    p {
+      width: 45%;
     }
   }
 }
 
 @media (max-width: $screen-sm) {
   .tiny-hero {
-    div {
-      width: 100%;
+    background-position: 31%;
+    p {
+      width: 55%;
+      padding: 6px;
+    }
+    .btn {
+    padding: 0px 11px;
     }
   }
 }
 
 @media (max-width: 566px) {
   .tiny-hero {
-    div {
+    background-position: 91%;
+    background-position-y: 402%;
+    background-size: 245% 93%;
+    p {
       width: 100%;
+      color: #fff;
     }
   }
 }
@@ -92,57 +81,36 @@ $store-featured-splash-banner-url: "https://s3.amazonaws.com/Store-Products/Feat
   margin-top: 19px;
   cursor: pointer;
   border: 1px solid #0bd397;
+  background: #717e84 center center;
   background-image: url($store-featured-splash-banner-url);
   h1 {
-    font-size: 36px;
-    font-weight: 500;
-    color: white;
-    margin-top:0;
+    font-size: 44px;
+    font-weight: 300;
+    color: #fff;
   }
   p {
     color: #fff;
-    font-size: 24px;
+  }
+  .btn {
+    border: 1px solid #00ff03;
   }
   div {
-    background: #3D3437; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(right top, #413036, #2F2F2F); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom left, #413036, #2F2F2F); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom left, #413036, #2F2F2F); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom left, #413036, #2F2F2F); /* Standard syntax (must be last) */
+    @extend .gradient-blue-angled;
     position: absolute;
     top: 0;
     left: 0;
     width: 28%;
-    min-width: 405px;
     height: 100%;
     padding: 13px 31px;
-  }
-  .btn {
-    color: black;
-    background-color: white;
-  }
-  .fa {
-    margin-left:5px;
-  }
-}
-
-@media (max-width: $screen-lg) {
-  .featured-hero {
-    background-position: 40% center;
-    background-image: url($store-featured-splash-banner-url);
   }
 }
 
 @media (max-width: $screen-md) {
   .featured-hero {
-    background-position: 30% center;
+    background: #717e84 70% center;
     background-image: url($store-featured-splash-banner-url);
-    h1 {
-      font-size: 32px;
-    }
     div {
       width: 50%;
-      min-width: 353px;
     }
   }
 }
@@ -150,10 +118,6 @@ $store-featured-splash-banner-url: "https://s3.amazonaws.com/Store-Products/Feat
 @media (max-width: $screen-sm) {
   .featured-hero h1 {
     line-height: 44px;
-    div {
-      width: 28%;
-      min-width: 200px;
-    }
   }
 }
 

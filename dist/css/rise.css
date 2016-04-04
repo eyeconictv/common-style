@@ -25,7 +25,7 @@
   background: -ms-linear-gradient(45deg, rgba(102, 223, 186, 0.52) 0%, #00dd97 100%);
   background: linear-gradient(45deg, rgba(102, 223, 186, 0.52) 0%, #00dd97 100%); }
 
-.gradient-blue-vertical {
+.gradient-blue-vertical, .tiny-hero p {
   background: -moz-linear-gradient(top, rgba(111, 111, 255, 0.7) 0%, #0072dd 34%, rgba(0, 114, 221, 0.6) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(111, 111, 255, 0.7)), color-stop(34%, #0072dd), color-stop(100%, rgba(0, 114, 221, 0.6)));
   background: -webkit-linear-gradient(top, rgba(111, 111, 255, 0.7) 0%, #0072dd 34%, rgba(0, 114, 221, 0.6) 100%);
@@ -34,7 +34,7 @@
   background: linear-gradient(to bottom, rgba(111, 111, 255, 0.7) 0%, #0072dd 34%, rgba(0, 114, 221, 0.6) 100%);
   background-color: rgba(0, 114, 221, 0.6); }
 
-.gradient-blue-angled {
+.gradient-blue-angled, .featured-hero div {
   background: -moz-linear-gradient(45deg, rgba(111, 111, 255, 0.7) 0%, #0072dd 100%);
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(111, 111, 255, 0.7)), color-stop(100%, #0072dd));
   background: -webkit-linear-gradient(45deg, rgba(111, 111, 255, 0.7) 0%, #0072dd 100%);
@@ -14913,61 +14913,49 @@ a.mfp-iframe:hover:after {
   margin-bottom: 20px;
   text-align: center;
   color: #fff;
-  cursor: pointer;
   background: #f5f6f8 bottom center;
   background-color: #FFF;
-  background-image: url("https://s3.amazonaws.com/Store-Products/Featured+Products/featured_tiny_march_madness_2016.jpg");
+  background-image: url("https://s3.amazonaws.com/Store-Products/Featured+Products/featured_tiny_storagesupportbundle.jpg");
   background-size: cover;
   background-position: 96%; }
-  .tiny-hero h1 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 2px; }
-  .tiny-hero div {
+  .tiny-hero p {
     width: 33%;
     height: 100%;
     margin-bottom: 0;
     padding: 6px;
     line-height: 17px;
-    position: relative;
-    background: #3D3437;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right top, #413036, #2F2F2F);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom left, #413036, #2F2F2F);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom left, #413036, #2F2F2F);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom left, #413036, #2F2F2F);
-    /* Standard syntax (must be last) */
-    font-size: 18px; }
+    position: relative; }
   .tiny-hero .btn, .tiny-hero .icon-nav label, .icon-nav .tiny-hero label {
+    margin-top: 4px;
     padding: 2px 12px;
     position: absolute;
-    bottom: 8px;
-    transform: translateX(-50%);
-    color: black;
-    background-color: white; }
-  .tiny-hero .fa {
-    margin-left: 5px; }
-
-@media (max-width: 1200px) {
-  .tiny-hero {
-    background-position: 83%; } }
+    left: 50%;
+    bottom: 4px;
+    transform: translateX(-50%); }
 
 @media (max-width: 992px) {
   .tiny-hero {
-    background-position: 88%; }
-    .tiny-hero div {
-      width: 39%; } }
+    background-position: 37%; }
+    .tiny-hero p {
+      width: 45%; } }
 
 @media (max-width: 768px) {
-  .tiny-hero div {
-    width: 100%; } }
+  .tiny-hero {
+    background-position: 31%; }
+    .tiny-hero p {
+      width: 55%;
+      padding: 6px; }
+    .tiny-hero .btn, .tiny-hero .icon-nav label, .icon-nav .tiny-hero label {
+      padding: 0px 11px; } }
 
 @media (max-width: 566px) {
-  .tiny-hero div {
-    width: 100%; } }
+  .tiny-hero {
+    background-position: 91%;
+    background-position-y: 402%;
+    background-size: 245% 93%; }
+    .tiny-hero p {
+      width: 100%;
+      color: #fff; } }
 
 /* ==========================================================================
    FEATURED BANNER
@@ -14979,64 +14967,38 @@ a.mfp-iframe:hover:after {
   margin-top: 19px;
   cursor: pointer;
   border: 1px solid #0bd397;
-  background-image: url("https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_march_madness_2016.jpg"); }
+  background: #717e84 center center;
+  background-image: url("https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_storagesupportbundle.jpg"); }
   .featured-hero h1 {
-    font-size: 36px;
-    font-weight: 500;
-    color: white;
-    margin-top: 0; }
+    font-size: 44px;
+    font-weight: 300;
+    color: #fff; }
   .featured-hero p {
-    color: #fff;
-    font-size: 24px; }
+    color: #fff; }
+  .featured-hero .btn, .featured-hero .icon-nav label, .icon-nav .featured-hero label {
+    border: 1px solid #00ff03; }
   .featured-hero div {
-    background: #3D3437;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right top, #413036, #2F2F2F);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom left, #413036, #2F2F2F);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom left, #413036, #2F2F2F);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom left, #413036, #2F2F2F);
-    /* Standard syntax (must be last) */
     position: absolute;
     top: 0;
     left: 0;
     width: 28%;
-    min-width: 405px;
     height: 100%;
     padding: 13px 31px; }
-  .featured-hero .btn, .featured-hero .icon-nav label, .icon-nav .featured-hero label {
-    color: black;
-    background-color: white; }
-  .featured-hero .fa {
-    margin-left: 5px; }
-
-@media (max-width: 1200px) {
-  .featured-hero {
-    background-position: 40% center;
-    background-image: url("https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_march_madness_2016.jpg"); } }
 
 @media (max-width: 992px) {
   .featured-hero {
-    background-position: 30% center;
-    background-image: url("https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_march_madness_2016.jpg"); }
-    .featured-hero h1 {
-      font-size: 32px; }
+    background: #717e84 70% center;
+    background-image: url("https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_storagesupportbundle.jpg"); }
     .featured-hero div {
-      width: 50%;
-      min-width: 353px; } }
+      width: 50%; } }
 
 @media (max-width: 768px) {
   .featured-hero h1 {
-    line-height: 44px; }
-    .featured-hero h1 div {
-      width: 28%;
-      min-width: 200px; } }
+    line-height: 44px; } }
 
 @media (max-width: 480px) {
   .featured-hero {
-    background-image: url("https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_march_madness_2016.jpg");
+    background-image: url("https://s3.amazonaws.com/Store-Products/Featured+Products/featured_splash_storagesupportbundle.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 168% auto; }
