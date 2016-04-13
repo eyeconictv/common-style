@@ -11612,6 +11612,14 @@ a[data-wysihtml5-command=underline].active {
     height: 18px;
     text-align: center; }
 
+.table-selector > tbody > tr.disabled-row {
+  background: #f5f5f5; }
+  .table-selector > tbody > tr.disabled-row td, .table-selector > tbody > tr.disabled-row td a {
+    cursor: not-allowed;
+    color: #999; }
+  .table-selector > tbody > tr.disabled-row:hover a {
+    color: #999; }
+
 .table-selector > tbody > tr.back-btn td:first-child:before {
   content: '\f060' !important; }
 
