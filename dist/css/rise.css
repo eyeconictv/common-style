@@ -11528,6 +11528,9 @@ a[data-wysihtml5-command=underline].active {
     .store-front.grid-list .content-box, .store-front.grid-list .content-box-editable, .store-front.grid-list .card {
       min-height: 290px; } }
 
+.store.grid-list-text {
+  color: #333; }
+
 .table-2 {
   width: 100%; }
   .table-2 > thead > tr > th {
