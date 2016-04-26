@@ -12148,6 +12148,9 @@ ul.tree ul li:last-child:before {
   .file-selector .subscription-status.trial, .file-selector .subscription-status.cancelled, .file-selector .subscription-status.expired, .file-selector .subscription-status.suspended {
     border: none; }
 
+.google-drive-picker img {
+  height: 16px; }
+
 /* Sections/Views
    ========================================================================== */
 /* ==========================================================================
