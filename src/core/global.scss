@@ -337,8 +337,6 @@ a.btn-primary:hover {
 
 .btn-github {
   @extend .btn-sm;
-  @extend .btn-rv-help;
-  @extend .rounded;
 }
 
 .btn-remove .fa::before,
