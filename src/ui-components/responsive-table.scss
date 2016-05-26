@@ -8,7 +8,9 @@
    ========================================================================== */
 .table {
   width: 100%;
+  margin-top: 0;
   > thead > tr > th {
+
     border-bottom: 1px solid $light-gray;
     color: $gray;
     padding: 12px;
@@ -19,6 +21,7 @@
     }
   }  
   > tbody > tr > td {
+    border-top: none;
     border-bottom: 1px solid $lighter-gray;
     color: $gray;
     padding: 12px;
