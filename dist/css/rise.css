@@ -1057,7 +1057,7 @@ h3, .h3 {
   font-size: 22px; }
 
 h4, .h4 {
-  font-size: 15px; }
+  font-size: 16px; }
 
 h5, .h5 {
   font-size: 14px; }
@@ -7231,7 +7231,8 @@ pre {
 .custom-addon .input-group-addon, .checkbox-addon .input-group-addon, .storage-group .input-group-addon {
   background: none;
   padding: 0 10px 0 10px;
-  border: 0; }
+  border: 0;
+  vertical-align: top; }
 
 .custom-addon .form-control, .checkbox-addon .form-control, .storage-group .form-control {
   border-bottom-right-radius: 4px !important;
@@ -8014,6 +8015,18 @@ path {
 .padding-small-vertical {
   padding-top: 15px;
   padding-bottom: 15px; }
+
+.img-icon {
+  height: 24px;
+  width: 24px;
+  margin-top: -4px;
+  margin-right: -4px;
+  vertical-align: bottom;
+  display: inline-block;
+  margin-left: 5px;
+  background-size: 100%; }
+  .img-icon.img-icon-google-calendar {
+    background-image: url("https://s3.amazonaws.com/Rise-Images/Icons/logo_calendar_32px.png"); }
 
 /* ==========================================================================
    font awesome
@@ -11572,6 +11585,8 @@ a[data-wysihtml5-command=underline].active {
       display: inline-block; }
     .table > tbody > tr > td:first-child, .table-2 > tbody > tr > td:first-child {
       font-weight: 500; }
+    .table > tbody > tr > td span, .table-2 > tbody > tr > td span {
+      white-space: nowrap; }
   .table > tbody > tr:last-child td, .table-2 > tbody > tr:last-child td {
     border-bottom: none; }
   .table > tbody > tr:hover > td a, .table-2 > tbody > tr:hover > td a {
@@ -12212,18 +12227,16 @@ ul.tree ul li:last-child:before {
   .file-selector .subscription-status.trial, .file-selector .subscription-status.cancelled, .file-selector .subscription-status.expired, .file-selector .subscription-status.suspended {
     border: none; }
 
-.file-selector .clear-selection {
-  position: relative; }
-  .file-selector .clear-selection span {
-    position: absolute;
-    top: 8px;
-    right: 13px;
-    z-index: 3;
-    cursor: pointer;
-    width: 17px;
-    text-align: center;
-    display: block;
-    height: 17px; }
+.file-selector .clear-selection span {
+  position: absolute;
+  top: 8px;
+  right: 13px;
+  z-index: 3;
+  cursor: pointer;
+  width: 17px;
+  text-align: center;
+  display: block;
+  height: 17px; }
 
 .google-drive-picker {
   display: inline-block; }
@@ -12473,6 +12486,13 @@ ul.tree ul li:last-child:before {
     .widget .section > h5:first-of-type {
       margin-top: -17px;
       color: #0081BA; }
+
+.date-range * {
+  display: inline-block;
+  margin-right: 4px; }
+
+.date-range .form-control {
+  width: 80px; }
 
 .storage-modal {
   /* ==========================================================================
@@ -16379,7 +16399,14 @@ div#css-slider figure {
     #appLauncherContainer .list .list-item h4 {
       font-weight: 500;
       font-size: 14px;
-      color: #555; }
+      color: #555;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 260px; }
+      @media (max-width: 992px) {
+        #appLauncherContainer .list .list-item h4 {
+          width: 180px; } }
     #appLauncherContainer .list .list-item:last-child {
       border-bottom: none; }
     #appLauncherContainer .list .list-item:hover h4 {

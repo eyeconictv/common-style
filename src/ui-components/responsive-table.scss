@@ -36,6 +36,9 @@
     &:first-child {
       font-weight: 500;
     }
+    span {
+      white-space: nowrap;
+    }
   }
   > tbody > tr {
     &:last-child td {
