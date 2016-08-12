@@ -79,10 +79,10 @@ $panel-width: 290px;
       max-height: calc(100vh - 290px);
     }
     .editor-playlist {
-      height: calc(100vh - 290px);
-      border:none;
+      height: calc(100vh - 100px);
+      border: none;
       .editor-playlist-item:last-child {
-        margin-bottom:20px;
+        margin-bottom: 20px;
       }
     }
     @media (max-width: 992px) {
@@ -121,6 +121,9 @@ $panel-width: 290px;
       -webkit-transition: all 0.5s;
       /* Safari 3.1 to 6.0 */
       transition: all 0.5s;
+      // .editor-playlist-item {
+      //   padding: 8px !important;
+      // }
       @media (max-width: 768px) {
         width: 100vw;
       }
@@ -137,7 +140,8 @@ $panel-width: 290px;
       float: right;
       opacity: 0;
       @media (max-width: 768px) {
-        -webkit-transform: translateX(0); /* Safari */
+        -webkit-transform: translateX(0);
+        /* Safari */
         transform: translateX(0);
         float: none;
         display: none;
