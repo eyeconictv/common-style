@@ -13528,7 +13528,7 @@ tr.blocked-file {
 
 .storage-full .scrollable-list, .storage-full .template-grid {
   padding: 4px;
-  max-height: calc(100vh - 410px);
+  max-height: calc(100vh - 280px);
   width: 100%; }
 
 #store-modal-frame {
