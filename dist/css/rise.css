@@ -13740,7 +13740,7 @@ tr.blocked-file {
         .workspace .workspace-sidebar .ph-properties {
           width: 100vw; } }
     .workspace .workspace-sidebar .ph-list .editor-playlist {
-      height: calc(100vh - 100px); }
+      height: calc(100vh - 210px); }
       @media (max-width: 768px) {
         .workspace .workspace-sidebar .ph-list .editor-playlist {
           margin-right: 0; } }
