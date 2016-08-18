@@ -130,6 +130,7 @@ $panel-width: 290px;
     .ph-list {
     .editor-playlist {
       height: calc(100vh - 210px);
+      max-height: calc(100vh - 250px);
       @media (max-width: 768px) {
         margin-right: 0;
       }

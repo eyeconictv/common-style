@@ -12781,7 +12781,8 @@ ul.tree ul li:last-child:before {
 .ph-playlist {
   margin-top: 10px; }
   .ph-playlist .editor-playlist {
-    height: calc(100vh - 330px); }
+    height: calc(100vh - 360px);
+    max-height: calc(100vh - 250px); }
     .ph-playlist .editor-playlist .editor-playlist-item {
       padding: 3px !important; }
 
@@ -13530,7 +13531,7 @@ tr.blocked-file {
 
 .storage-full .scrollable-list, .storage-full .template-grid {
   padding: 4px;
-  max-height: calc(100vh - 280px);
+  max-height: calc(100vh - 300px);
   width: 100%; }
 
 #store-modal-frame {
@@ -13740,7 +13741,8 @@ tr.blocked-file {
         .workspace .workspace-sidebar .ph-properties {
           width: 100vw; } }
     .workspace .workspace-sidebar .ph-list .editor-playlist {
-      height: calc(100vh - 210px); }
+      height: calc(100vh - 210px);
+      max-height: calc(100vh - 250px); }
       @media (max-width: 768px) {
         .workspace .workspace-sidebar .ph-list .editor-playlist {
           margin-right: 0; } }
