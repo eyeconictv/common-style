@@ -12780,8 +12780,10 @@ ul.tree ul li:last-child:before {
 
 .ph-playlist {
   margin-top: 10px; }
-  .ph-playlist .editor-playlist-item {
-    padding: 3px !important; }
+  .ph-playlist .editor-playlist {
+    height: calc(100vh - 330px); }
+    .ph-playlist .editor-playlist .editor-playlist-item {
+      padding: 3px !important; }
 
 .protip-container {
   position: absolute;
@@ -13700,7 +13702,6 @@ tr.blocked-file {
     .workspace .workspace-sidebar #listWithHandle.scrollable-list, .workspace .workspace-sidebar #listWithHandle.template-grid {
       max-height: calc(100vh - 290px); }
     .workspace .workspace-sidebar .editor-playlist {
-      height: calc(100vh - 100px);
       border: none; }
       .workspace .workspace-sidebar .editor-playlist .editor-playlist-item:last-child {
         margin-bottom: 20px; }
@@ -13738,9 +13739,11 @@ tr.blocked-file {
         .workspace .workspace-sidebar .ph-list,
         .workspace .workspace-sidebar .ph-properties {
           width: 100vw; } }
-    @media (max-width: 768px) {
-      .workspace .workspace-sidebar .ph-list {
-        margin-right: 0; } }
+    .workspace .workspace-sidebar .ph-list .editor-playlist {
+      height: calc(100vh - 210px); }
+      @media (max-width: 768px) {
+        .workspace .workspace-sidebar .ph-list .editor-playlist {
+          margin-right: 0; } }
     .workspace .workspace-sidebar .ph-properties {
       float: right;
       opacity: 0; }
