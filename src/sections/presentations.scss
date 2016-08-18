@@ -79,7 +79,6 @@ $panel-width: 290px;
       max-height: calc(100vh - 290px);
     }
     .editor-playlist {
-      height: calc(100vh - 100px);
       border: none;
       .editor-playlist-item:last-child {
         margin-bottom: 20px;
@@ -129,13 +128,15 @@ $panel-width: 290px;
       }
     }
     .ph-list {
+    .editor-playlist {
+      height: calc(100vh - 100px);
       @media (max-width: 768px) {
         margin-right: 0;
       }
-      // .editor-playlist-item {
-      //   padding: 6px !important;
-      // }
     }
+  }
+
+
     .ph-properties {
       float: right;
       opacity: 0;
