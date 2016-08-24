@@ -11454,6 +11454,22 @@ a[data-wysihtml5-command=underline].active {
     .editor-playlist .arrows .btn:last-child, .editor-playlist .arrows .icon-nav label:last-child, .icon-nav .editor-playlist .arrows label:last-child {
       border-radius: 0 0 3px 3px; }
 
+.editor-playlist .list-grip {
+  float: left;
+  width: 25px;
+  margin-right: 3px;
+  background-color: white;
+  height: 56px;
+  display: inline-block;
+  cursor: move;
+  cursor: -webkit-grabbing; }
+  .editor-playlist .list-grip .btn, .editor-playlist .list-grip .icon-nav label, .icon-nav .editor-playlist .list-grip label {
+    margin: 0; }
+    .editor-playlist .list-grip .btn:first-child, .editor-playlist .list-grip .icon-nav label:first-child, .icon-nav .editor-playlist .list-grip label:first-child {
+      border-radius: 3px 3px 0 0; }
+    .editor-playlist .list-grip .btn:last-child, .editor-playlist .list-grip .icon-nav label:last-child, .icon-nav .editor-playlist .list-grip label:last-child {
+      border-radius: 0 0 3px 3px; }
+
 .editor-playlist .actions {
   float: right;
   margin-right: 4px;
