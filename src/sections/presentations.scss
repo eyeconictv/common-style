@@ -133,6 +133,7 @@ $panel-width: 290px;
       max-height: calc(100vh - 240px);
       @media (max-width: 768px) {
         margin-right: 0;
+        max-height: calc(100vh - 300px);
       }
     }
   }
