@@ -13609,7 +13609,8 @@ tr.blocked-file {
       max-height: calc(100vh - 240px); }
       @media (max-width: 768px) {
         .workspace .workspace-sidebar .ph-list .editor-playlist {
-          margin-right: 0; } }
+          margin-right: 0;
+          max-height: calc(100vh - 300px); } }
     @media (max-width: 768px) {
       .workspace .workspace-sidebar .ph-settings .scrollable-list, .workspace .workspace-sidebar .ph-settings .template-grid {
         max-height: calc(100vh - 350px) !important; } }
