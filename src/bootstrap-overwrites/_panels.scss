@@ -1,28 +1,9 @@
-.panel {
-	> .panel-heading {
-		
-		.collapse-control {
-			position: absolute;
-			top: 8px;
-			right: 15px;
-			line-height: 30px;
-			display: block;
-		}
-	}
-	h3, p {
-		font-size: 14px;
-		color: $gray;
-		margin-right: 30px;
-		margin-bottom: 0;
-		font-weight: 400;
-		line-height: 1.6;
-		span {
-			font-weight: 500;
-		}
-	}
-}
-
-
+/* Deprecate
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== */
 
 .panel-info {	
 	border: 1px solid lighten($rise-blue, 40%);
@@ -52,14 +33,6 @@
 			text-align: right;
 		}
 	}
-}
-
-.content-box {
-  @extend .panel;
-}
-
-.content-box-body {
-  @extend .panel-body;
 }
 
 .upload-panel {
@@ -115,5 +88,13 @@
     margin-right: -15px;
     float: right;
   }
+}
+
+.content-box {
+  @extend .panel,.panel-default;
+}
+
+.content-box-body {
+  @extend .panel-body;
 }
 

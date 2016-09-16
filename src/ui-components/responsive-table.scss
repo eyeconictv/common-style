@@ -9,9 +9,6 @@
         color: $gray;
         display: block;
         padding: 12px 0;
-        &:hover {
-          
-        }
       }
     } 
   }
@@ -19,7 +16,6 @@
     .table-body__row > .table-body__cell {
       vertical-align: middle;
       color: $gray;
-
       >a {
         display: block;
         padding: 12px 0;
@@ -78,6 +74,29 @@
 
 .table-2 {
   @extend .table;
+  thead {
+    tr>th {
+      padding: 8px;
+    }
+  }
+  tbody {
+    tr {
+      &:hover {
+        a {
+          color:$rise-blue;
+        }
+      }
+    }
+    tr>td {
+      padding: 8px;
+      >a {
+        color: $dark-gray;
+        &:hover {
+          text-decoration:none;
+        }
+      }
+    }
+  }
 }
 
 .table-selector {

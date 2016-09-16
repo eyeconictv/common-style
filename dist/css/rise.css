@@ -4549,18 +4549,18 @@ a.list-group-item-danger {
     .panel-group .panel-footer + .panel-collapse .panel-body, .panel-group .panel-footer + .panel-collapse .content-box-body {
       border-bottom: 1px solid #ddd; }
 
-.panel-default {
+.panel-default, .content-box, .select-subcompany-modal .list-group, .content-box-editable, .card, #appLauncherContainer .scrollable-list, #appLauncherContainer .template-grid {
   border-color: #ddd; }
-  .panel-default > .panel-heading {
+  .panel-default > .panel-heading, .content-box > .panel-heading, .select-subcompany-modal .list-group > .panel-heading, .content-box-editable > .panel-heading, .card > .panel-heading, #appLauncherContainer .scrollable-list > .panel-heading, #appLauncherContainer .template-grid > .panel-heading {
     color: #404040;
     background-color: #fff;
     border-color: #ddd; }
-    .panel-default > .panel-heading + .panel-collapse > .panel-body, .panel-default > .panel-heading + .panel-collapse > .content-box-body {
+    .panel-default > .panel-heading + .panel-collapse > .panel-body, .content-box > .panel-heading + .panel-collapse > .panel-body, .select-subcompany-modal .list-group > .panel-heading + .panel-collapse > .panel-body, .content-box-editable > .panel-heading + .panel-collapse > .panel-body, .card > .panel-heading + .panel-collapse > .panel-body, #appLauncherContainer .scrollable-list > .panel-heading + .panel-collapse > .panel-body, #appLauncherContainer .template-grid > .panel-heading + .panel-collapse > .panel-body, .panel-default > .panel-heading + .panel-collapse > .content-box-body, .content-box > .panel-heading + .panel-collapse > .content-box-body, .select-subcompany-modal .list-group > .panel-heading + .panel-collapse > .content-box-body, .content-box-editable > .panel-heading + .panel-collapse > .content-box-body, .card > .panel-heading + .panel-collapse > .content-box-body, #appLauncherContainer .scrollable-list > .panel-heading + .panel-collapse > .content-box-body, #appLauncherContainer .template-grid > .panel-heading + .panel-collapse > .content-box-body {
       border-top-color: #ddd; }
-    .panel-default > .panel-heading .badge {
+    .panel-default > .panel-heading .badge, .content-box > .panel-heading .badge, .select-subcompany-modal .list-group > .panel-heading .badge, .content-box-editable > .panel-heading .badge, .card > .panel-heading .badge, #appLauncherContainer .scrollable-list > .panel-heading .badge, #appLauncherContainer .template-grid > .panel-heading .badge {
       color: #fff;
       background-color: #404040; }
-  .panel-default > .panel-footer + .panel-collapse > .panel-body, .panel-default > .panel-footer + .panel-collapse > .content-box-body {
+  .panel-default > .panel-footer + .panel-collapse > .panel-body, .content-box > .panel-footer + .panel-collapse > .panel-body, .select-subcompany-modal .list-group > .panel-footer + .panel-collapse > .panel-body, .content-box-editable > .panel-footer + .panel-collapse > .panel-body, .card > .panel-footer + .panel-collapse > .panel-body, #appLauncherContainer .scrollable-list > .panel-footer + .panel-collapse > .panel-body, #appLauncherContainer .template-grid > .panel-footer + .panel-collapse > .panel-body, .panel-default > .panel-footer + .panel-collapse > .content-box-body, .content-box > .panel-footer + .panel-collapse > .content-box-body, .select-subcompany-modal .list-group > .panel-footer + .panel-collapse > .content-box-body, .content-box-editable > .panel-footer + .panel-collapse > .content-box-body, .card > .panel-footer + .panel-collapse > .content-box-body, #appLauncherContainer .scrollable-list > .panel-footer + .panel-collapse > .content-box-body, #appLauncherContainer .template-grid > .panel-footer + .panel-collapse > .content-box-body {
     border-bottom-color: #ddd; }
 
 .panel-primary {
@@ -7307,23 +7307,12 @@ pre {
   .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
     border-radius: 4px 4px 0 0; } }
 
-.panel > .panel-heading .collapse-control, .content-box > .panel-heading .collapse-control, .select-subcompany-modal .list-group > .panel-heading .collapse-control, .content-box-editable > .panel-heading .collapse-control, .card > .panel-heading .collapse-control, #appLauncherContainer .scrollable-list > .panel-heading .collapse-control, #appLauncherContainer .template-grid > .panel-heading .collapse-control {
-  position: absolute;
-  top: 8px;
-  right: 15px;
-  line-height: 30px;
-  display: block; }
-
-.panel h3, .content-box h3, .select-subcompany-modal .list-group h3, .content-box-editable h3, .card h3, #appLauncherContainer .scrollable-list h3, #appLauncherContainer .template-grid h3, .panel p, .content-box p, .select-subcompany-modal .list-group p, .content-box-editable p, .card p, #appLauncherContainer .scrollable-list p, #appLauncherContainer .template-grid p {
-  font-size: 14px;
-  color: #555;
-  margin-right: 30px;
-  margin-bottom: 0;
-  font-weight: 400;
-  line-height: 1.6; }
-  .panel h3 span, .content-box h3 span, .select-subcompany-modal .list-group h3 span, .content-box-editable h3 span, .card h3 span, #appLauncherContainer .scrollable-list h3 span, #appLauncherContainer .template-grid h3 span, .panel p span, .content-box p span, .select-subcompany-modal .list-group p span, .content-box-editable p span, .card p span, #appLauncherContainer .scrollable-list p span, #appLauncherContainer .template-grid p span {
-    font-weight: 500; }
-
+/* Deprecate
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== 
+   ========================================================================== */
 .panel-info {
   border: 1px solid #87daff; }
   .panel-info > .panel-heading .toolbar {
@@ -11641,6 +11630,19 @@ a[data-wysihtml5-command=underline].active {
    ========================================================================== 
    ========================================================================== 
    ========================================================================== */
+.table-2 thead tr > th {
+  padding: 8px; }
+
+.table-2 tbody tr:hover a {
+  color: #0081BA; }
+
+.table-2 tbody tr > td {
+  padding: 8px; }
+  .table-2 tbody tr > td > a {
+    color: #4d4d4d; }
+    .table-2 tbody tr > td > a:hover {
+      text-decoration: none; }
+
 .table-selector > thead > tr th label {
   margin: 0; }
 
