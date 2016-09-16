@@ -11633,8 +11633,10 @@ a[data-wysihtml5-command=underline].active {
 .table-2 thead tr > th {
   padding: 8px; }
 
-.table-2 tbody tr:hover a {
-  color: #0081BA; }
+.table-2 tbody tr:hover {
+  cursor: pointer; }
+  .table-2 tbody tr:hover a {
+    color: #0081BA; }
 
 .table-2 tbody tr > td {
   padding: 8px; }
