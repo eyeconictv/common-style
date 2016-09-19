@@ -1,3 +1,52 @@
+/* STANDARD UTILITIES 
+All utilities have a prefix u_ added to them
+*/
+
+/* Line Height Utilities
+   ==========================================================================
+   To be used with forms and buttons
+*/
+
+/* For Normal Sized Buttons and Input Fields */
+.u_lh-normal { 
+  line-height: 33px;
+}
+
+/* Styling Utilities
+   ========================================================================== */
+
+.u_bordered {
+  border: 1px solid $gray-lighter;
+  border-radius: $border-radius-base;
+}
+
+/* Text Utilities
+ */
+
+.u_text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.u_icon-hover {
+  >i {
+    opacity: 0;
+  }
+  &:hover {
+    >i {
+      opacity: 1;
+    }
+  }
+}
+
+/* 
+==========================================================================
+==========================================================================
+==========================================================================
+DEPRECATE Old Utilities
+   ========================================================================== */
+
 .nowrap {
   white-space: nowrap;
 }
@@ -7,9 +56,7 @@
 }
 
 .ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  @extend .u_text-ellipsis;
 }
 
 .ahrefdisabled {
