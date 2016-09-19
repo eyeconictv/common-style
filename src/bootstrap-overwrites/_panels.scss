@@ -1,3 +1,13 @@
+.panel {
+	overflow: hidden;
+	> .panel-heading {
+		position: relative;
+		background: #f7f7f7;
+		padding: 8px;
+		border: none;
+		border-left: 0;
+    }
+}
 /* Deprecate
    ========================================================================== 
    ========================================================================== 
