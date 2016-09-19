@@ -7307,6 +7307,15 @@ pre {
   .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
     border-radius: 4px 4px 0 0; } }
 
+.panel, .content-box, .select-subcompany-modal .list-group, .content-box-editable, .card, #appLauncherContainer .scrollable-list, #appLauncherContainer .template-grid {
+  overflow: hidden; }
+  .panel > .panel-heading, .content-box > .panel-heading, .select-subcompany-modal .list-group > .panel-heading, .content-box-editable > .panel-heading, .card > .panel-heading, #appLauncherContainer .scrollable-list > .panel-heading, #appLauncherContainer .template-grid > .panel-heading {
+    position: relative;
+    background: #f7f7f7;
+    padding: 8px;
+    border: none;
+    border-left: 0; }
+
 /* Deprecate
    ========================================================================== 
    ========================================================================== 
@@ -13964,50 +13973,14 @@ tr.blocked-file {
 
 /* Display Settings
    ========================================================================== */
-.reboot-time {
-  margin-bottom: 0; }
-  .reboot-time table.time-picker {
-    display: inline-block;
-    vertical-align: middle; }
-  .reboot-time label, .reboot-time .checkbox {
-    display: inline-block; }
-  @media (max-width: 768px) {
-    .reboot-time .checkbox {
-      display: block; } }
-
-.download-buttons img {
-  height: 32px; }
-
-.download-buttons .row:nth-child(2), .download-buttons .support-app .ticket-list-table .title-row:nth-child(2), .support-app .ticket-list-table .download-buttons .title-row:nth-child(2), .download-buttons .support-app .ticket-list-table .ticket:nth-child(2), .support-app .ticket-list-table .download-buttons .ticket:nth-child(2) {
-  margin-top: 6px; }
-
-.display-panel {
-  text-align: center;
-  width: 80%;
-  margin: 0 auto; }
-  .display-panel .panel-heading {
-    padding: 4px;
-    border-left: 0; }
-  .display-panel h3.panel-title {
-    margin-right: 0; }
-  .display-panel .panel-body, .display-panel .content-box-body {
-    padding: 4px;
-    font-size: 22px;
-    font-weight: 800; }
-
 /* Display Status Circle
    ========================================================================== */
-.offline:before {
-  color: #e74c3c; }
-
-.notinstalled:before {
-  color: #444; }
-
-.online:before {
-  color: #4ab767; }
-
-/* Display Table
-   ========================================================================== */
+/* Deprecate
+ +   ========================================================================== 
+ +   ========================================================================== 
+ +   ========================================================================== 
+ +   ========================================================================== 
+ +   ========================================================================== */
 .display-name span {
   max-width: 240px;
   display: inline-block;
