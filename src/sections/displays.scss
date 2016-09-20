@@ -47,22 +47,7 @@
 
 /* Display Status Circle
    ========================================================================== */
-// !!REDUNDANT
-// .offline {
-//   &:before {
-//     color:#e74c3c;
-//   }
-// }
-// .notinstalled {
-//   &:before {
-//     color:#444;
-//   }
-// }
-// .online {
-//   &:before {
-//     color:$rise-green;
-//   }
-// }
+
 
 /* Deprecate
  +   ========================================================================== 
@@ -88,3 +73,19 @@
     vertical-align: middle;
   }
 }
+
+.offline {
+   &:before {
+    color:#e74c3c;
+   }
+}
+ .notinstalled {
+   &:before {
+     color:#444;
+   }
+ }
+ .online {
+   &:before {
+     color:$rise-green;
+   }
+ }
