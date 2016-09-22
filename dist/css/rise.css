@@ -10364,6 +10364,9 @@ path {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+.l_display-screenshot .panel, .l_display-screenshot .content-box, .l_display-screenshot .select-subcompany-modal .list-group, .select-subcompany-modal .l_display-screenshot .list-group, .l_display-screenshot .content-box-editable, .l_display-screenshot .card, .l_display-screenshot #appLauncherContainer .scrollable-list, #appLauncherContainer .l_display-screenshot .scrollable-list, .l_display-screenshot #appLauncherContainer .template-grid, #appLauncherContainer .l_display-screenshot .template-grid {
+  min-height: 200px; }
+
 /* UI-Components
    ========================================================================== */
 .modal-custom > div {
