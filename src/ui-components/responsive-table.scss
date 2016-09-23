@@ -4,15 +4,12 @@
   width: 100%;
   .table-header {
     .table-header__row > .table-header__cell {
-      border-bottom: none;
       >a {
         color: $gray;
         display: block;
-        padding: 12px 0;
       }
       >span {
         display: block;
-        padding: 12px 0;
       }
     } 
   }
@@ -22,10 +19,8 @@
       color: $gray;
       >a {
         display: block;
-        padding: 12px 0;
       }
       >span {
-        padding: 12px 0;
         display: inline-block;
         vertical-align: middle;
       }

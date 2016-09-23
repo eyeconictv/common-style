@@ -1850,7 +1850,7 @@ th {
   .table > tbody > tr > td, .table-2 > tbody > tr > td,
   .table > tfoot > tr > th, .table-2 > tfoot > tr > th,
   .table > tfoot > tr > td, .table-2 > tfoot > tr > td {
-    padding: 0 8px;
+    padding: 12px 8px;
     line-height: 1.42857;
     vertical-align: top;
     border-top: 1px solid #f2f2f2; }
@@ -10364,8 +10364,10 @@ path {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+/* Display Layouts
+   ========================================================================== */
 .l_display-screenshot .panel, .l_display-screenshot .content-box, .l_display-screenshot .select-subcompany-modal .list-group, .select-subcompany-modal .l_display-screenshot .list-group, .l_display-screenshot .content-box-editable, .l_display-screenshot .card, .l_display-screenshot #appLauncherContainer .scrollable-list, #appLauncherContainer .l_display-screenshot .scrollable-list, .l_display-screenshot #appLauncherContainer .template-grid, #appLauncherContainer .l_display-screenshot .template-grid {
-  min-height: 200px; }
+  min-height: 300px; }
 
 /* UI-Components
    ========================================================================== */
@@ -11608,23 +11610,17 @@ a[data-wysihtml5-command=underline].active {
    ========================================================================== */
 .table, .table-2 {
   width: 100%; }
-  .table .table-header .table-header__row > .table-header__cell, .table-2 .table-header .table-header__row > .table-header__cell {
-    border-bottom: none; }
-    .table .table-header .table-header__row > .table-header__cell > a, .table-2 .table-header .table-header__row > .table-header__cell > a {
-      color: #555;
-      display: block;
-      padding: 12px 0; }
-    .table .table-header .table-header__row > .table-header__cell > span, .table-2 .table-header .table-header__row > .table-header__cell > span {
-      display: block;
-      padding: 12px 0; }
+  .table .table-header .table-header__row > .table-header__cell > a, .table-2 .table-header .table-header__row > .table-header__cell > a {
+    color: #555;
+    display: block; }
+  .table .table-header .table-header__row > .table-header__cell > span, .table-2 .table-header .table-header__row > .table-header__cell > span {
+    display: block; }
   .table .table-body .table-body__row > .table-body__cell, .table-2 .table-body .table-body__row > .table-body__cell {
     vertical-align: middle;
     color: #555; }
     .table .table-body .table-body__row > .table-body__cell > a, .table-2 .table-body .table-body__row > .table-body__cell > a {
-      display: block;
-      padding: 12px 0; }
+      display: block; }
     .table .table-body .table-body__row > .table-body__cell > span, .table-2 .table-body .table-body__row > .table-body__cell > span {
-      padding: 12px 0;
       display: inline-block;
       vertical-align: middle; }
   .table.table--selector .table-body .table-body__row > .table-body__cell, .table--selector.table-2 .table-body .table-body__row > .table-body__cell {
