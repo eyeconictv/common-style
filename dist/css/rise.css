@@ -11660,7 +11660,7 @@ a[data-wysihtml5-command=underline].active {
     color: #0081BA; }
 
 .table-2 tbody tr > td {
-  padding: 8px; }
+  padding: 12px 8px; }
   .table-2 tbody tr > td > a {
     color: #4d4d4d; }
     .table-2 tbody tr > td > a:hover {
@@ -15001,7 +15001,6 @@ a.mfp-iframe:hover:after {
 .subtotals {
   margin-bottom: 0; }
   .subtotals tbody tr td {
-    border-top: none;
     text-align: right; }
 
 .order-total {
