@@ -12761,7 +12761,8 @@ ul.tree ul li:last-child:before {
       height: 16px;
       display: inline-block;
       top: -3px;
-      position: relative; }
+      position: relative;
+      vertical-align: middle; }
     .name-container p:first-child span:last-child {
       overflow: hidden;
       white-space: nowrap;
