@@ -12754,7 +12754,6 @@ ul.tree ul li:last-child:before {
   .name-container span {
     vertical-align: middle; }
   .name-container p:first-child {
-    margin-top: 5px;
     cursor: pointer; }
     .name-container p:first-child span:first-child {
       width: 16px;
