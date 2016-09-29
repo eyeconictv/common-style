@@ -12753,22 +12753,22 @@ ul.tree ul li:last-child:before {
   flex-direction: column;
   align-items: baseline;
   justify-content: center; }
+  .name-container span {
+    vertical-align: middle; }
   .name-container p:first-child {
     margin-top: 5px;
     cursor: pointer; }
     .name-container p:first-child span:first-child {
       width: 16px;
       height: 16px;
-      display: inline-block;
-      top: -3px;
-      position: relative;
-      vertical-align: middle; }
+      display: inline-block; }
     .name-container p:first-child span:last-child {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
       width: 125px;
-      display: inline-block; }
+      display: inline-block;
+      line-height: 16px; }
   .name-container p:last-child {
     position: relative;
     top: -7px; }
