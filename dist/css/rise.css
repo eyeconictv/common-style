@@ -7303,14 +7303,12 @@ pre {
   .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
     border-radius: 4px 4px 0 0; } }
 
-.panel, .content-box, .select-subcompany-modal .list-group, .content-box-editable, .card, #appLauncherContainer .scrollable-list, #appLauncherContainer .template-grid {
-  overflow: hidden; }
-  .panel > .panel-heading, .content-box > .panel-heading, .select-subcompany-modal .list-group > .panel-heading, .content-box-editable > .panel-heading, .card > .panel-heading, #appLauncherContainer .scrollable-list > .panel-heading, #appLauncherContainer .template-grid > .panel-heading {
-    position: relative;
-    background: #f7f7f7;
-    padding: 8px;
-    border: none;
-    border-left: 0; }
+.panel > .panel-heading, .content-box > .panel-heading, .select-subcompany-modal .list-group > .panel-heading, .content-box-editable > .panel-heading, .card > .panel-heading, #appLauncherContainer .scrollable-list > .panel-heading, #appLauncherContainer .template-grid > .panel-heading {
+  position: relative;
+  background: #f7f7f7;
+  padding: 8px;
+  border: none;
+  border-left: 0; }
 
 /* Deprecate
    ========================================================================== 
@@ -12753,21 +12751,21 @@ ul.tree ul li:last-child:before {
   flex-direction: column;
   align-items: baseline;
   justify-content: center; }
+  .name-container span {
+    vertical-align: middle; }
   .name-container p:first-child {
-    margin-top: 5px;
     cursor: pointer; }
     .name-container p:first-child span:first-child {
       width: 16px;
       height: 16px;
-      display: inline-block;
-      top: -3px;
-      position: relative; }
+      display: inline-block; }
     .name-container p:first-child span:last-child {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
       width: 125px;
-      display: inline-block; }
+      display: inline-block;
+      line-height: 16px; }
   .name-container p:last-child {
     position: relative;
     top: -7px; }
