@@ -1,3 +1,61 @@
+.financial-selector {
+	overflow: hidden;
+	height: 80vh;
+	h1 {
+		font-size: 48px;
+		margin-bottom: 0;
+	}
+	h3 {
+		margin-top: 8px;
+		font-weight: 400;
+	}
+	.hero {
+		text-align: center;
+		padding-top: 40px;
+		-webkit-transition: all 0.2s;
+   	transition: all 0.2s;
+	}
+}
+
+.financial-selector__container {
+	-webkit-transition: all 0.8s;
+   transition: all 0.8s;
+   position: relative;
+  .panel-email-login {
+  	-webkit-transition: all 0.8s;
+   	transition: all 0.8s;
+  	opacity: 0;
+  }
+	&.email-login-animation {
+		-webkit-transform: translate(0,-300px);
+		.hero {
+			opacity: 0;
+		}
+		.panel-email-login {
+			opacity: 1;
+		}
+	}
+}
+
+.panel-email-login {
+	legend {
+		padding: 20px;
+	}
+}
+
+.login-options {
+	margin-top: 30px;
+}
+
+.navbar-logo {
+	float: left;
+	margin-top: 6px;
+	margin-right: 8px;
+	display: inline-block;
+	width: 100px;
+}
+
+/* OLD STYLE */
 .tag-manager .label {
 	display: inline-block;
 	margin:5px;
