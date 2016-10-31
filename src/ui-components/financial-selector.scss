@@ -1,19 +1,22 @@
 .financial-selector {
 	overflow: hidden;
-	height: 80vh;
+	height: calc(100vh-50px);
 	h1 {
 		font-size: 48px;
 		margin-bottom: 0;
+		font-weight: 600;
 	}
 	h3 {
 		margin-top: 8px;
 		font-weight: 400;
+		color: $gray;
 	}
 	.hero {
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 20px;
 		-webkit-transition: all 0.2s;
    	transition: all 0.2s;
+   	height: 400px;
 	}
 }
 
@@ -25,9 +28,10 @@
   	-webkit-transition: all 0.8s;
    	transition: all 0.8s;
   	opacity: 0;
+  	height: 400px;
   }
 	&.email-login-animation {
-		-webkit-transform: translate(0,-300px);
+		-webkit-transform: translate(0,-400px);
 		.hero {
 			opacity: 0;
 		}
