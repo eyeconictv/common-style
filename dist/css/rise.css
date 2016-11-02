@@ -7085,12 +7085,12 @@ button.close {
     border-color: #5cbe76; }
 
 .btn-google-auth {
-  color: #df4a32;
+  color: #555;
   background-color: #fff;
   border-color: #e8e8e8; }
   .btn-google-auth:hover, .btn-google-auth:focus, .btn-google-auth:active, .btn-google-auth.active,
   .open > .btn-google-auth.dropdown-toggle {
-    color: #df4a32;
+    color: #555;
     background-color: #f2f2f2;
     border-color: #c9c9c9;
     outline: 0; }
@@ -10541,23 +10541,26 @@ a[data-wysihtml5-command=underline].active {
   border: 1px solid #CCC;
   line-height: 0px; }
 
-.financial-selector {
+.financial-selector h1 {
+  font-size: 48px;
+  margin-bottom: 0;
+  font-weight: 600; }
+
+.financial-selector h3 {
+  margin-top: 8px;
+  font-weight: 400;
+  color: #555; }
+
+.financial-selector .hero {
+  text-align: center;
+  padding-top: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  height: 400px; }
+
+.financial-selector.financial-selector--login {
   overflow: hidden;
   height: calc(100vh-50px); }
-  .financial-selector h1 {
-    font-size: 48px;
-    margin-bottom: 0;
-    font-weight: 600; }
-  .financial-selector h3 {
-    margin-top: 8px;
-    font-weight: 400;
-    color: #555; }
-  .financial-selector .hero {
-    text-align: center;
-    padding-top: 20px;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-    height: 400px; }
 
 .financial-selector__container {
   -webkit-transition: all 0.8s;
@@ -11400,7 +11403,8 @@ a[data-wysihtml5-command=underline].active {
   .table .table-header .table-header__row > .table-header__cell > span, .table-2 .table-header .table-header__row > .table-header__cell > span {
     display: block; }
   .table .table-body .table-body__row > .table-body__cell, .table-2 .table-body .table-body__row > .table-body__cell {
-    vertical-align: middle; }
+    vertical-align: middle;
+    border-right: 1px solid #f5f5f5; }
     .table .table-body .table-body__row > .table-body__cell > a, .table-2 .table-body .table-body__row > .table-body__cell > a {
       display: block; }
     .table .table-body .table-body__row > .table-body__cell > span, .table-2 .table-body .table-body__row > .table-body__cell > span {
