@@ -2,7 +2,7 @@
    ========================================================================== */
 .table {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   .table-header {
     .table-header__row > .table-header__cell {
       >a {
@@ -358,8 +358,4 @@
   }
 }
 
-.table {
-  @media only screen and (min-width : 768px) {
-    font-size: 13px;
-  }
-}
+

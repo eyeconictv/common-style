@@ -6982,7 +6982,8 @@ button.close {
 .btn, .icon-nav label {
   outline: 0;
   -webkit-transition: all 0.2s;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  -webkit-font-smoothing: subpixel-antialiased; }
 
 .btn-lg, .btn-group-lg > .btn, .icon-nav .btn-group-lg > label {
   font-size: 16px;
@@ -6998,8 +6999,7 @@ button.close {
 .btn-default, .timeline .dropdown-menu li .btn, .timeline .dropdown-menu li .icon-nav label, .icon-nav .timeline .dropdown-menu li label {
   color: #333;
   background-color: #e8e8e8;
-  border-color: #CCC;
-  box-shadow: inset 0 -2px 0 #e8e8e8; }
+  border-color: #CCC; }
   .btn-default:hover, .timeline .dropdown-menu li .btn:hover, .timeline .dropdown-menu li .icon-nav label:hover, .icon-nav .timeline .dropdown-menu li label:hover, .btn-default:focus, .timeline .dropdown-menu li .btn:focus, .timeline .dropdown-menu li .icon-nav label:focus, .icon-nav .timeline .dropdown-menu li label:focus, .btn-default:active, .timeline .dropdown-menu li .btn:active, .timeline .dropdown-menu li .icon-nav label:active, .icon-nav .timeline .dropdown-menu li label:active, .btn-default.active, .timeline .dropdown-menu li .active.btn, .timeline .dropdown-menu li .icon-nav label.active, .icon-nav .timeline .dropdown-menu li label.active,
   .open > .btn-default.dropdown-toggle, .timeline .dropdown-menu li
   .open > .dropdown-toggle.btn, .timeline .dropdown-menu li .icon-nav
@@ -7072,8 +7072,7 @@ button.close {
 .btn-primary {
   color: #fff;
   background-color: #4ab767;
-  border-color: #4ab767;
-  box-shadow: inset 0 -2px 0 #3b9352; }
+  border-color: #4ab767; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: #fff;
@@ -7300,7 +7299,7 @@ pre {
     height: 36px;
     min-width: 36px;
     margin-top: 8px;
-    padding: 0 8px 0 10px; }
+    padding: 4px 8px; }
     .navbar .navbar-brand img {
       height: 100%; }
 
@@ -7314,7 +7313,7 @@ pre {
       border: 1px solid #CCC; } }
   @media (min-width: 992px) {
     .navbar {
-      padding: 4px 0;
+      padding: 2px 0;
       margin-bottom: 0; }
       .navbar .navbar-brand {
         padding-top: 0; } }
@@ -10614,6 +10613,194 @@ a[data-wysihtml5-command=underline].active {
   li.user-profile-dropdown .user-id span {
     max-width: 100px; } }
 
+/* Signup Modal
+   ========================================================================== */
+.signup-modal h1 {
+  font-size: 44px;
+  font-weight: 300;
+  margin-top: 48px; }
+  .signup-modal h1.text-muted {
+    margin-top: 5px;
+    font-size: 16px; }
+
+.signup-offer {
+  margin-top: 48px; }
+  .signup-offer .widgets-offer li {
+    background: #f2f2f2;
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    vertical-align: top;
+    padding: 5px;
+    border-radius: 4px; }
+    .signup-offer .widgets-offer li img {
+      width: 36px; }
+    .signup-offer .widgets-offer li span {
+      font-size: 12px;
+      font-weight: 500;
+      color: #666;
+      display: block;
+      line-height: 14px;
+      margin-top: 5px; }
+
+.registration-modal label {
+  font-weight: 500;
+  font-size: 15px; }
+  .registration-modal label span {
+    color: #666;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5px; }
+
+.registration-modal .checkbox label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400; }
+
+.signup-counters {
+  text-align: center;
+  margin-top: 24px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px; }
+  .signup-counters .counter {
+    margin-bottom: 16px; }
+    .signup-counters .counter p {
+      margin: 0;
+      font-weight: 300;
+      font-size: 28px;
+      color: #4ab767; }
+    .signup-counters .counter span {
+      font-size: 12px;
+      display: block;
+      color: #999;
+      font-weight: 500; }
+
+/* Company Selector
+   ========================================================================== */
+.company-search {
+  padding-top: 20px; }
+
+/* Move Company
+   ========================================================================== */
+.move-company label {
+  font-weight: normal; }
+
+.move-company a {
+  line-height: 34px; }
+
+.move-company h3 {
+  font-size: 16px; }
+
+.move-company .to-company {
+  margin-bottom: 20px; }
+
+/* Company Settings
+   ========================================================================== */
+.company-settings .action-link {
+  margin-left: 20px; }
+
+.double-margin {
+  margin-bottom: 40px !important; }
+
+.sub-company-alert.test-company-alert {
+  background-color: #c0392b; }
+
+.sub-company-alert.test-company-alert + .sub-company-alert {
+  margin-top: 5px; }
+
+.sub-company-alert {
+  width: 100%;
+  line-height: 24px;
+  bottom: -24px;
+  background-color: #e48f86;
+  color: #000;
+  padding: 0 20px;
+  border-bottom: 1px solid #db695d;
+  text-align: center;
+  display: inline-block; }
+
+.sub-company-alert .link-button {
+  display: inline-block;
+  font-weight: bold; }
+
+.authorization-modal {
+  text-align: center; }
+  .authorization-modal .profile-img {
+    width: 72px;
+    height: 72px;
+    -webkit-border-radius: 72px;
+    -moz-border-radius: 72px;
+    border-radius: 72px; }
+  .authorization-modal p, .authorization-modal .btn, .authorization-modal .icon-nav label, .icon-nav .authorization-modal label {
+    margin-top: 40px; }
+
+.user-profile-dropdown .dropdown-toggle .user-id span {
+  display: block;
+  line-height: 16px;
+  font-size: 13px;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .user-profile-dropdown .dropdown-toggle .user-id span.pending-registration {
+    line-height: 32px;
+    display: none; }
+  @media (max-width: 768px) {
+    .user-profile-dropdown .dropdown-toggle .user-id span {
+      width: 120px; } }
+
+.user-profile-dropdown .dropdown-toggle .user-id strong {
+  font-size: 12px;
+  color: #999; }
+
+.user-profile-dropdown .google-account {
+  margin: 15px;
+  line-height: 32px; }
+
+.dropdown-header {
+  color: #555;
+  padding: 10px; }
+  .dropdown-header.sub-company-header {
+    background: #f8e4e2; }
+  .dropdown-header p {
+    line-height: 18px;
+    margin: 0;
+    font-size: 13px;
+    overflow: hidden; }
+    @media (max-width: 480px) {
+      .dropdown-header p strong {
+        text-overflow: ellipsis;
+        display: block;
+        overflow: hidden;
+        max-width: 260px; }
+      .dropdown-header p a {
+        display: block;
+        margin-top: 5px; }
+      .dropdown-header p .text-muted {
+        display: none; } }
+
+.actions-nav > li > a .label {
+  position: absolute;
+  left: 60%;
+  top: -2px;
+  z-index: 1;
+  padding: 4px 7px;
+  font-size: 50%;
+  vertical-align: middle; }
+
+.actions-nav > li.shopping-cart > a .label {
+  left: 75%; }
+
+.actions-nav .dropdown .company-menu {
+  right: -62px; }
+
+.actions-nav .dropdown .company-menu::before {
+  right: 80px; }
+
+.actions-nav .dropdown .company-menu::after {
+  right: 81px; }
+
 .background-group .content-box, .background-group .select-subcompany-modal .list-group, .select-subcompany-modal .background-group .list-group, .background-group .content-box-editable, .background-group .card, .background-group #appLauncherContainer .scrollable-list, #appLauncherContainer .background-group .scrollable-list, .background-group #appLauncherContainer .template-grid, #appLauncherContainer .background-group .template-grid {
   height: 34px;
   overflow: hidden;
@@ -11539,7 +11726,7 @@ li.dropdown-header, li.dropdown-footer {
    ========================================================================== */
 .table, .table-2 {
   width: 100%;
-  font-size: 12px; }
+  font-size: 14px; }
   .table .table-header .table-header__row > .table-header__cell > a, .table-2 .table-header .table-header__row > .table-header__cell > a {
     color: #020621;
     display: block; }
@@ -11758,10 +11945,6 @@ tr.blocked-file > td {
     margin-bottom: 20px; }
   .presentation-selector .panel-body, .presentation-selector .content-box-body {
     clear: both; }
-
-@media only screen and (min-width: 768px) {
-  .table, .table-2 {
-    font-size: 13px; } }
 
 .jumbo-card {
   text-align: center;
