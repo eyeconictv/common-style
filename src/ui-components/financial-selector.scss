@@ -1,26 +1,54 @@
 .financial-selector {
-	
-	h1 {
-		font-size: 48px;
-		margin-bottom: 0;
-		font-weight: 600;
-	}
-	h3 {
-		margin-top: 8px;
-		font-weight: 400;
-		color: $gray;
-	}
 	.hero {
 		text-align: center;
 		padding-top: 20px;
 		-webkit-transition: all 0.2s;
-   	transition: all 0.2s;
-   	height: 400px;
+   		transition: all 0.2s;
+   		height: 400px;
+   	h1 {
+   		color: #FFF;
+			font-size: 24px;
+			margin-bottom: 0;
+			font-weight: 600;
+		}
+		h3 {
+			font-weight: 400;
+			color: #CCC;
+			font-size: 18px;
+		}
 	}
 	&.financial-selector--login {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding-top: 80px;
 		overflow: hidden;
-		height: calc(100vh-50px);
+		background-color: #666;
+		background-image: url('https://s3.amazonaws.com/Rise-Images/financial-selector/stock.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: multiply;
+		background-position: bottom;
+		-webkit-transition: all 0.2s;
+   	transition: all 0.2s;
+		&.is-email-login {
+			background-color: #bcbcbc;
+		}
 	}
+}
+
+.is-hidden {
+	-webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+}
+
+.is-visible {
+	-webkit-transition: all 0.8s;
+  transition: all 0.8s;
+	opacity: 1;
 }
 
 .financial-selector__container {
@@ -28,9 +56,7 @@
    transition: all 0.8s;
    position: relative;
   .panel-email-login {
-  	-webkit-transition: all 0.8s;
-   	transition: all 0.8s;
-  	opacity: 0;
+  	@extend .is-hidden;
   	height: 400px;
   }
 	&.email-login-animation {
@@ -39,27 +65,58 @@
 			opacity: 0;
 		}
 		.panel-email-login {
-			opacity: 1;
+			@extend .is-visible;
 		}
 	}
 }
 
 .panel-email-login {
 	legend {
-		padding: 20px;
+		padding: 10px;
 	}
 }
 
-.login-options {
-	margin-top: 30px;
+
+.financial-selector {
+	@media (min-width: 992px) {
+		.hero {
+
+		}
+	}
+	@media (min-width: 1200px) {
+		.hero {
+			h1 {
+				font-size: 48px;
+			}
+			h3 {
+				font-size: 24px;
+			}
+		}
+	}
 }
 
-.navbar-logo {
+.drag-handle {
+	background-image: url('https://s3.amazonaws.com/Rise-Images/UI/dot-pattern.png');
+	width: 12px;
+	height: 36px;
 	float: left;
-	margin-top: 6px;
-	margin-right: 8px;
-	display: inline-block;
-	width: 100px;
+	margin-right: 10px;
+}
+
+.drag-handle {
+	@media (min-width: 992px) {
+	}
+}
+
+.bottom-save-block {
+	background-color: #F7F7F9;
+	border-top: 1px solid #d4d4d4;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 16px 0;
+	z-index: 9999;
+	box-shadow: 0px -4px 10px 0 rgba(22,22,22,0.08);
 }
 
 /* OLD STYLE */
