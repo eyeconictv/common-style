@@ -1,0 +1,88 @@
+.navbar {
+  .navbar-brand {
+    .fa {
+      padding: 8px;
+    }
+  }
+  .navbar-nav {
+    >li {
+      >a {
+        &.btn, &.company-buttons-icon-mobile {
+          margin-top: 8px;
+          margin-bottom: 0;
+        }
+        &:hover {
+          color: $rise-blue;
+        }
+      }
+      button {
+        @extend .navbar-btn;
+      }
+      >a.btn-link, >button.btn-link {
+        &:hover,&:focus,&:active {
+          color: gray;
+        }
+      }
+    }
+  }
+}
+.navbar-default {
+li.user-profile-dropdown {
+  >a {
+    padding: 8px;
+    margin-top: 0;
+  }
+  padding: 0;
+  text-align: right;
+  .user-id {
+    span {
+      @extend .u_ellipsis;
+      display: block;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .username {
+      line-height: 16px;
+    }
+  }
+  .profile-pic {
+    margin-left: 8px;
+    margin-top: 4px;
+    border-radius: 4px;
+    img {
+      height: 100%;
+    }
+  }
+}
+}
+
+.app-navigation {
+  ul {
+    >li>a {
+      display: block;
+      .image {
+        height: 16px;
+        margin-right: 8px;
+        float: left;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media (max-width: 767px) {
+  li.user-profile-dropdown {
+    >a {
+      padding: 2px;
+      margin-top: 8px;
+    }
+    .user-id {
+      span {
+        max-width: 100px;
+      }
+    }
+  }
+}

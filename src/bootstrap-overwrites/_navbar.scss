@@ -5,7 +5,7 @@
 	border-radius: 0;
 	border: none;
 	min-height: 0;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 	.navbar-header {
 		display: inline-block;
 	}
@@ -22,7 +22,7 @@
 			.dropdown-menu {
 				>li {
 					>a {
-						&:hover {
+						&:hover,&:focus {
 							color: $rise-blue;
 						}
 					}
@@ -39,9 +39,12 @@
 		}
 		.navbar-nav>li>a {
 			border-radius: 4px;
-
+			font-size: 13px;
 			&:hover,&:focus {
 				color:$dark-gray;
+			}
+			&.selected {
+				color: #444;
 			}
 		}
 		.navbar-nav>.open>a {
@@ -49,9 +52,13 @@
 		}
 	}
 	.navbar-brand {
-		width: 110px;
-		padding: 8px 8px 0 10px;
-		height: auto;
+		height: 36px;
+		min-width: 36px;
+		margin-top: 8px;
+		padding: 0 8px 0 10px;	
+		img {
+			height: 100%;
+		}
 	}
 }
 
@@ -72,10 +79,9 @@
 	/* Medium Devices, Desktops */
 	@media (min-width: 992px) {
 		padding: 4px 0;
-		margin-bottom: 20px;
+		margin-bottom: 0;
 		.navbar-brand {
-			width: 110px;
-			padding-top: 8px;
+			padding-top: 0;
 		}
 	}
 }
