@@ -32,7 +32,13 @@
 	}
 	&.navbar-default {
 		box-shadow: 0px 2px 10px 0 rgba(22,22,22,0.05);
-		border: none;
+		.navbar-nav {
+			.dropdown {
+				.dropdown-menu {
+					border-radius: $border-radius-base;
+				}
+			}
+		}
 		.navbar-nav>li {
 			display: inline-block;
 			vertical-align: top;
@@ -41,7 +47,6 @@
 			border-radius: 4px;
 			font-size: 13px;
 			&:hover,&:focus {
-				color:$dark-gray;
 			}
 			&.selected {
 				color: #444;

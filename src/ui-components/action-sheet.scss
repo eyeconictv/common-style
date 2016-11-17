@@ -62,8 +62,12 @@
   }
 }
 
-li.dropdown-header, li.dropdown-footer {
+li.dropdown-footer {
   padding: 8px 8px 0;
+}
+
+li.dropdown-header {
+  padding: 8px;
 }
 
 #action-sheet-backdrop.modal-backdrop {
