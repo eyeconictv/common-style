@@ -1,119 +1,87 @@
-.navbar.navbar-default {
-  background: #FFF;
-  border-bottom: none !important;
-  margin-bottom: 0;
-  padding: 8px 0;
-  .navbar-header {
-    width: 100%;
-    height: auto;
-    li {
-      margin-right: 0;
-      vertical-align: top;
+.navbar {
+  .navbar-nav {
+    >li {
       >a {
-        &:hover {
-          background:none;
+        &.btn, &.company-buttons-icon-mobile {
+          margin-top: 8px;
+          margin-bottom: 0;
         }
-        &.btn-primary {
-          &:hover {
-            background: $rise-green;
-          }
+      }
+      button {
+        @extend .navbar-btn;
+      }
+      >a.btn-link, >button.btn-link {
+        &:hover,&:focus,&:active {
+          color: gray;
         }
       }
     }
-    .navbar-brand {
-      margin-right: 10px;
-      @media (max-width: 768px) {
-        margin-right: 0;
-      }
+  }
+  .navbar-brand {
+    .fa {
+      padding: 8px;
     }
-    .navbar-left {
-      a {
-        line-height: 33px;
-        font-size: 13px;
-        font-weight: 500;
-        padding: 1px 11px;
-        margin-right: 3px;
-        border-radius: 3px;
-        white-space: nowrap;
-        &:hover {
-          color: $rise-blue;
-          background: $lighter-gray;
-        }
-        &.selected {
-          color: $rise-blue;
-          background: $brand-bg;
-        }
-      }
+  }
+}
+
+
+.navbar-default {
+li.user-profile-dropdown {
+  >a {
+    padding: 8px;
+    margin-top: 0;
+  }
+  padding: 0;
+  text-align: right;
+  .user-id {
+    span {
+      @extend .u_ellipsis;
+      display: block;
+      font-size: 13px;
+      line-height: 18px;
     }
-    .navbar-right {
-      margin:0;
-      >li {
-        display: inline-block;
-        margin-left: 5px;
-        float: none;
-        >a {
-          padding: 0;
+    .username {
+      line-height: 16px;
+    }
+  }
+  .profile-pic {
+    margin-left: 8px;
+    margin-top: 4px;
+    border-radius: 4px;
+    img {
+      height: 100%;
+    }
+  }
+}
+}
+
+.app-navigation {
+  ul {
+    >li>a {
+      display: block;
+      .image {
+        height: 16px;
+        margin-right: 8px;
+        float: left;
+        img {
+          height: 100%;
         }
-        >a.btn {
-          color: #FFF;
-          height: auto;
-          padding: 6px 12px;
-          &:hover {
-            background: darker(5%, $rise-green)!important;
-          }
-        }
-        >a.btn.btn-link {
-          color: $gray;
-          &:hover {
-            background: none;
-          }
-        }
-      }
-      .profile-pic {
-        width: 33px;
-        height: 33px;
-        border-radius: 4px;
-        vertical-align: top;
-        margin-left: 10px;
       }
     }
   }
 }
 
-.container>.navbar-header {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.app-navigation {
-  width: 190px;
-  li {
-    display: block;
-    .image {
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      img {
-        width: 100%;
+/* Small Devices, Tablets */
+@media (max-width: 767px) {
+  li.user-profile-dropdown {
+    >a {
+      padding: 2px;
+      margin-top: 8px;
+    }
+    .user-id {
+      span {
+        max-width: 100px;
       }
-    }
-    &:hover {
-      background: rgba(150,150,150,.1);
-      a {
-        background: none !important;
-      }
-    }
-    a {
-      line-height: 24px !important;
-      border-radius: 0 !important;
-      padding: 15px !important;
-      display: block;
-    }
-    span {
-      vertical-align: top;
-      line-height: 24px;
-      margin-left: 5px;
-      display: inline-block;
     }
   }
 }
@@ -240,12 +208,12 @@
 }
 
 .sub-company-alert.test-company-alert + .sub-company-alert {
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .sub-company-alert {
   width: 100%;
-  line-height: 24px;
+  line-height: 20px;
   bottom: -24px;
   background-color: lighten($brand-danger, 25%);
   color: #000;
@@ -330,12 +298,6 @@
       }
     }
   }
-}
-
-.dropdown-footer {
-  padding: 15px;
-  text-align: right;
-  border-top: 1px solid #e6e6e6;
 }
 
 .actions-nav {

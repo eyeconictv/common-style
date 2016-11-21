@@ -2,10 +2,11 @@
    ========================================================================== */
 .table {
   width: 100%;
+  font-size: 14px;
   .table-header {
     .table-header__row > .table-header__cell {
       >a {
-        color: $gray;
+        color: $gray-dark;
         display: block;
       }
       >span {
@@ -16,7 +17,7 @@
   .table-body {
     .table-body__row > .table-body__cell {
       vertical-align: middle;
-      color: $gray;
+
       >a {
         display: block;
       }
@@ -26,12 +27,23 @@
       }
     }
   }
+  &.table--sortable {
+    .table-body {
+      .table-body__row > .table-body__cell {
+        cursor: move;
+      }
+      .table-body__row:hover > .table-body__cell {
+        background: #f5f5f5;
+      }
+    }
+  }
   &.table--selector {
     .table-body {
       .table-body__row > .table-body__cell {
         cursor: pointer;
         &:first-child:before {
           @extend .selector-icon;
+
         }
         &:first-child i {
           margin: 0 4px;
@@ -40,6 +52,12 @@
       .table-body__row--is-selected > .table-body__cell {
         background: $rise-green;
         color: #FFF;
+        a, .text-muted, .text-green {
+          color: #FFF;
+        }
+        .fa:before {
+          color: #FFF;
+        }
         &:first-child:before {
           @extend .selector-icon--selected;
         }
@@ -58,7 +76,7 @@
   display: inline-block;
   margin-right: 4px;
   margin-left: 4px;
-  vertical-align: middle;
+  vertical-align: top;
   &.selector-icon--selected {
     content:'\f14a';
   }
@@ -339,4 +357,5 @@
     clear: both;
   }
 }
+
 
