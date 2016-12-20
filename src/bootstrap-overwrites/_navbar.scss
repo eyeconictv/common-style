@@ -42,14 +42,18 @@
 		.navbar-nav>li {
 			display: inline-block;
 			vertical-align: top;
+			border-right: 1px solid white;
 		}
 		.navbar-nav>li>a {
 			border-radius: 4px;
 			font-size: 13px;
 			&:hover,&:focus {
+				color: $rise-blue;
+				background-color: $brand-bg;
 			}
 			&.selected {
-				color: #444;
+				color: $rise-blue;
+				background-color: $brand-bg;
 			}
 		}
 		.navbar-nav>.open>a {
