@@ -11769,10 +11769,6 @@ li.dropdown-header {
 
 .table-2 tbody tr > td {
   padding: 12px 8px; }
-  .table-2 tbody tr > td > a {
-    color: #4d4d4d; }
-    .table-2 tbody tr > td > a:hover {
-      text-decoration: none; }
 
 .table-selector > thead > tr th label {
   margin: 0; }
