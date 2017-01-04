@@ -10444,8 +10444,19 @@ path {
 
 /* Display Layouts
    ========================================================================== */
-.l_display-screenshot .panel, .l_display-screenshot .content-box, .l_display-screenshot .select-subcompany-modal .list-group, .select-subcompany-modal .l_display-screenshot .list-group, .l_display-screenshot .content-box-editable, .l_display-screenshot .card, .l_display-screenshot #appLauncherContainer .scrollable-list, #appLauncherContainer .l_display-screenshot .scrollable-list, .l_display-screenshot #appLauncherContainer .template-grid, #appLauncherContainer .l_display-screenshot .template-grid {
-  min-height: 300px; }
+.l_display-screenshot .panel-body, .l_display-screenshot .content-box-body {
+  min-height: 300px;
+  padding-top: 105px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.l_display-screenshot.l_display-screenshot-offline label {
+  opacity: .4;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  filter: url(desaturate.svg#greyscale); }
 
 /* UI-Components
    ========================================================================== */
@@ -14073,11 +14084,7 @@ tr.blocked-file {
   .ph-item-icon.ph-video-item:before {
     content: '\f03d'; }
 
-/* Display Settings
-   ========================================================================== */
-/* Display Status Circle
-   ========================================================================== */
-/* Deprecate
+/* Deprecate Below
  +   ========================================================================== 
  +   ========================================================================== 
  +   ========================================================================== 
