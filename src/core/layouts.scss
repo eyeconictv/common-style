@@ -2,7 +2,22 @@
    ========================================================================== */
 
 .l_display-screenshot {
-	.panel {
+	
+	.panel-body {
 		min-height: 300px;
+		padding-top: 105px;
+    	background-position: center center;
+    	background-size: contain;
+    	background-repeat: no-repeat;
 	}
+	
+	&.l_display-screenshot-offline {
+	 	label {
+	        opacity: .4;
+	        -webkit-filter: grayscale(100%);
+	        filter: gray;
+	        filter: grayscale(100%);
+	        filter: url(desaturate.svg#greyscale);
+      }
+  }
 }
