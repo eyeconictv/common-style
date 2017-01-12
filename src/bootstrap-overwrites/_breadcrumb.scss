@@ -1,35 +1,32 @@
 .breadcrumb {
-    font-size: 14px;
+	font-size: 14px;
     padding: 7px 10px;
-    margin-bottom: 0px;
-    overflow: hidden;
-    white-space: nowrap;
-    background: none;
-    >li {
-        vertical-align: top;
-        a,
-        span {
-            max-width: 100px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display: inline-block;
-            vertical-align: top;
-        }
-    }
+	margin-bottom: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	background: none;
+	>li {
+		vertical-align: top;
+		a, span {
+			max-width: 100px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
 }
 
 .breadcrumb {
-    @media only screen and (min-width: 768px) {
-        padding: 4px 8px;
-        font-size: 16px;
-        >li {
-            a,
-            span {
-                max-width: 240px;
-            }
-        }
-    }
-    @media (min-width: 1200px) {}
+	@media only screen and (min-width : 768px) {
+		>li {
+			a,span {
+				max-width: 240px;
+			}
+		}
+	}
+	@media (min-width: 1200px) {
+	}
 }
 
 // .storage-app {
