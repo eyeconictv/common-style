@@ -48,7 +48,6 @@
     border-color: #ebccd1;
   }
 }
-
 .tag-selector {
   padding: 5px;
   margin-bottom: 10px;
@@ -67,8 +66,8 @@
   padding: 0;
 }
 
-.panel-editable {
-  @extend .panel;
+.content-box-editable {
+  @extend .content-box;
   min-height: 34px;
   padding: 0;
   position: relative;
@@ -97,12 +96,11 @@
   }
 }
 
-//TODO: Still in use?
-// .content-box-filters {
-//   background: #fcfcfc;
-//   padding: 10px 10px 5px;
-//   margin-top: 5px;
-// }
+.content-box-filters {
+  background: #fcfcfc;
+  padding: 10px 10px 5px;
+  margin-top: 5px;
+}
 
 .select-tags {
   padding: 3px;
@@ -112,10 +110,9 @@
   }
 }
 
-//TODO: Still in use?
-// .content-box-disabled {
-//   pointer-events: none !important;
-//   background: $light-gray !important;
-// }
+.content-box-disabled {
+  pointer-events: none !important;
+  background: $light-gray !important;
+}
 
 
