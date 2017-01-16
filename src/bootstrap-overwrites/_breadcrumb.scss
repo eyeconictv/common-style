@@ -1,6 +1,6 @@
 .breadcrumb {
-	font-size: 14px;
-    padding: 7px 10px;
+	font-size: 12px;
+	padding: 0;
 	margin-bottom: 0px;
 	overflow: hidden;
 	white-space: nowrap;
@@ -19,6 +19,9 @@
 
 .breadcrumb {
 	@media only screen and (min-width : 768px) {
+		
+		padding: 10px 0;
+		font-size: 16px;
 		>li {
 			a,span {
 				max-width: 240px;
@@ -29,8 +32,9 @@
 	}
 }
 
-// .storage-app {
-//     .breadcrumb {
-        
-//     }
-// }
+.storage-app {
+	.breadcrumb {
+		font-size: 14px;
+		padding: 7px 10px;
+	}
+}
