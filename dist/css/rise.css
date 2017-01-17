@@ -7532,6 +7532,8 @@ ul {
   list-style: none;
   padding: 0; }
 
+/* Image
+   ========================================================================== */
 /* Company Users
    ========================================================================== */
 .company-users .action-bar {
@@ -7765,54 +7767,6 @@ ul.social {
 .label-disabled {
   color: #e6e6e6; }
 
-.add-padding {
-  padding: 10px !important; }
-
-.add-left {
-  margin-left: 10px !important; }
-
-.add-right {
-  margin-right: 10px !important; }
-
-.remove-bottom {
-  margin-bottom: 0 !important; }
-
-.small-bottom {
-  margin-bottom: 3px !important; }
-
-.half-bottom {
-  margin-bottom: 10px !important; }
-
-.add-bottom {
-  margin-bottom: 20px !important; }
-
-.add-bottom-double {
-  margin-bottom: 40px !important; }
-
-.remove-top {
-  margin-top: 0 !important; }
-
-.small-top {
-  margin-top: 3px !important; }
-
-.half-top {
-  margin-top: 10px !important; }
-
-.add-top {
-  margin-top: 20px !important; }
-
-.add-top-double {
-  margin-top: 40px !important; }
-
-.remove-radius {
-  border-radius: 0 !important; }
-
-.remove-margin {
-  margin: 0 !important; }
-
-.remove-padding {
-  padding: 0 !important; }
-
 .btn-google-drive,
 .btn-google-drive:active .btn-google-drive.active {
   width: 30px;
@@ -7929,6 +7883,17 @@ All utilities have a prefix u_ added to them
 .u_icon-hover:hover > i {
   opacity: 1; }
 
+/* Spacing Utilities
+ */
+.u_padding-lg, .padding-large {
+  padding: 32px; }
+
+.u_padding-md {
+  padding: 16px; }
+
+.u_padding-sm {
+  padding: 8px; }
+
 /* 
 ==========================================================================
 ==========================================================================
@@ -8022,9 +7987,6 @@ path {
   padding-right: 0px;
   padding-left: 0px; }
 
-.padding-large {
-  padding: 30px; }
-
 .padding-large-horizontal {
   padding-left: 30px;
   padding-right: 30px; }
@@ -8056,6 +8018,54 @@ path {
     display: block;
     width: 100%;
     margin-bottom: 10px; } }
+
+.add-padding {
+  padding: 10px !important; }
+
+.add-left {
+  margin-left: 10px !important; }
+
+.add-right {
+  margin-right: 10px !important; }
+
+.remove-bottom {
+  margin-bottom: 0 !important; }
+
+.small-bottom {
+  margin-bottom: 3px !important; }
+
+.half-bottom {
+  margin-bottom: 10px !important; }
+
+.add-bottom {
+  margin-bottom: 20px !important; }
+
+.add-bottom-double {
+  margin-bottom: 40px !important; }
+
+.remove-top {
+  margin-top: 0 !important; }
+
+.small-top {
+  margin-top: 3px !important; }
+
+.half-top {
+  margin-top: 10px !important; }
+
+.add-top {
+  margin-top: 20px !important; }
+
+.add-top-double {
+  margin-top: 40px !important; }
+
+.remove-radius {
+  border-radius: 0 !important; }
+
+.remove-margin {
+  margin: 0 !important; }
+
+.remove-padding {
+  padding: 0 !important; }
 
 /* ==========================================================================
    font awesome
@@ -13046,8 +13056,6 @@ ul.tree ul li:last-child:before {
     clear: both;
     display: block;
     content: ""; }
-  .storage-modal .thumbnail {
-    border: none; }
   .storage-modal .thumbnail .caption {
     font-size: 12px;
     text-align: center;
@@ -14062,6 +14070,19 @@ tr.blocked-file {
 
 .online:before {
   color: #4ab767; }
+
+.panel .panel__header, .select-subcompany-modal .list-group .panel__header, .panel-editable .panel__header, .card .panel__header, #appLauncherContainer .scrollable-list .panel__header, #appLauncherContainer .template-grid .panel__header {
+  font-size: 1.8em;
+  margin-top: 0.2em; }
+
+.panel .panel__sub-header, .select-subcompany-modal .list-group .panel__sub-header, .panel-editable .panel__sub-header, .card .panel__sub-header, #appLauncherContainer .scrollable-list .panel__sub-header, #appLauncherContainer .template-grid .panel__sub-header {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #555; }
+
+.store-footer li > a {
+  padding: 8px 0;
+  display: block; }
 
 /* ==========================================================================
    Store Navigation
