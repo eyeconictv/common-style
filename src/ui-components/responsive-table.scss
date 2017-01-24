@@ -45,38 +45,6 @@
                     color: $rise-blue;
                 }
             }
-            &.table-body__row--disabled {
-                background: #f5f5f5;
-                .table-body__cell,
-                .table-body__cell a {
-                    //TODO: Simplify?
-                    cursor: not-allowed;
-                    color: #999;
-                }
-                &:hover {
-                    a {
-                        color: #999;
-                    }
-                }
-            }
-            &.table-body__row--no-select {
-                .table-body__cell {
-                    &:first-child:before {
-                        content: '' !important;
-                    }
-                }
-            }
-            &.table-body__row--blocked-file {
-                > .table-body__cell {
-                    background: #f7f7f7;
-                    cursor: pointer;
-                    position: relative;
-                    .callout {
-                        top: 45px;
-                        left: 0;
-                    }
-                }
-            }
             & > .table-body__cell {
                 vertical-align: middle;
                 padding: 12px 8px;
@@ -98,7 +66,7 @@
                     }
                 }
                 &:first-child:before {
-                    font-family: FontAwesome; //TODO?
+                    font-family: FontAwesome;
                     font-style: normal;
                     margin-right: 10px;
                     display: inline-block;
@@ -119,6 +87,7 @@
             }
         }
     }
+    //end .table-body
     &.table--sortable {
         .table-body {
             .table-body__row > .table-body__cell {
@@ -131,28 +100,79 @@
     }
     &.table--selector {
         .table-body {
-            .table-body__row > .table-body__cell {
-                cursor: pointer;
-                &:first-child:before {
-                    @extend .selector-icon;
+            .table-body__row {
+                & > .table-body__cell {
+                    cursor: pointer;
+                    &:first-child i {
+                        margin: 0 4px;
+                    }
                 }
-                &:first-child i {
-                    margin: 0 4px;
+                &.active {
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+                    -webkit-animation-name: fadeIn;
+                    animation-name: fadeIn;
+                    &:hover {
+                        .table-body__cell {
+                            background: lighten($rise-green, 5%);
+                            color: #FFF;
+                        }
+                    }
+                    .table-body__cell {
+                        background: $rise-green;
+                        color: #FFF;
+                        a,
+                        .text-muted,
+                        .text-green {
+                            color: #FFF;
+                        }
+                        .text-muted {
+                            color: #FFF;
+                        }
+                        .file,
+                        .folder,
+                        .fa {
+                            &:before {
+                                color: #FFF;
+                            }
+                        }
+                        &:first-child:before {
+                            color: #FFF;
+                        }
+                    }
                 }
-            }
-            .table-body__row.active > .table-body__cell {
-                background: $rise-green;
-                color: #FFF;
-                a,
-                .text-muted,
-                .text-green {
-                    color: #FFF;
+                &.table-body__row--disabled {
+                    .table-body__cell,
+                    .table-body__cell a {
+                        cursor: not-allowed;
+                        color: #999;
+                        background: #f5f5f5;
+                    }
+                    &:hover {
+                        a {
+                            color: #999;
+                        }
+                    }
                 }
-                .fa:before {
-                    color: #FFF;
+                &.table-body__row--no-select {
+                    .table-body__cell {
+                        &:first-child:before {
+                            content: '' !important;
+                        }
+                    }
                 }
-                &:first-child:before {
-                    @extend .selector-icon--selected; //TODO Check this redundancy with Multiple Selector
+                &.table-body__row--blocked-file {
+                    > .table-body__cell {
+                        background: #f7f7f7;
+                        cursor: pointer;
+                        position: relative;
+                        .callout {
+                            top: 45px;
+                            left: 0;
+                        }
+                    }
                 }
             }
         }
@@ -160,39 +180,6 @@
             .table-body__cell {
                 &:first-child:before {
                     content: '\f060' !important;
-                }
-            }
-        }
-        &.active {
-            //TODO Rename this to something clearer?
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-            -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-            &:hover {
-                .table-body__cell {
-                    background: lighten($rise-green, 5%);
-                    color: #FFF;
-                }
-            }
-            .table-body__cell {
-                background: lighten($rise-green, 5%);
-                color: #FFF;
-                a {
-                    color: #FFF;
-                }
-                .text-muted {
-                    color: #FFF;
-                }
-                .folder {
-                    &:before {
-                        color: #FFF;
-                    }
-                }
-                &:first-child:before {
-                    color: #FFF;
                 }
             }
         }
@@ -237,30 +224,10 @@
             }
         }
     }
-}
-
-
-/* Table Selector Icon
-   ========================================================================== */
-
-.selector-icon {
-    font-family: FontAwesome;
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: middle;
-    color: #d4d4d4;
-    font-size: 16px;
-    width: 16px;
-    text-align: center;
-    content: '\f096';
-    &.selector-icon--selected {
-        content: '\f14a';
-        color: #fff;
-    }
-}
-
+} // end .table
 
 /* Presentation Selector */
+
 //TODO: No references in current Presentation Selector in either Schedules or Alerts
 .presentation-selector {
     margin-top: 20px;
