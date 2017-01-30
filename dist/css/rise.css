@@ -7063,6 +7063,12 @@ button.close {
 .btn-toggle {
   display: inline; }
 
+@media (max-width: 768px) {
+  .button-row .btn, .button-row .icon-nav label, .icon-nav .button-row label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px; } }
+
 .dropdown .dropdown-menu {
   top: 120%;
   left: auto;
@@ -7789,25 +7795,25 @@ All utilities have a prefix u_ added to them
    ==========================================================================
    To be used with forms and buttons
 */
-.u_ellipsis, .u_ellipsis-md, .u_ellipsis-lg, .navbar-default li.user-profile-dropdown .user-id span {
+.u_ellipsis, .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference, .u_ellipsis-lg {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
 
 @media (max-width: 767px) {
-  .u_ellipsis-md {
+  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
     width: 100px; } }
 
 @media (min-width: 768px) {
-  .u_ellipsis-md {
+  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
     max-width: 140px; } }
 
 @media (min-width: 992px) {
-  .u_ellipsis-md {
+  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
     max-width: 180px; } }
 
 @media (min-width: 1200px) {
-  .u_ellipsis-md {
+  .u_ellipsis-md, .navbar-default li.user-profile-dropdown .user-id span, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
     max-width: 240px; } }
 
 @media (max-width: 767px) {
@@ -7827,14 +7833,28 @@ All utilities have a prefix u_ added to them
     max-width: 340px; } }
 
 /* Styling Utilities
-   ========================================================================== */
+   ==========================================================================
+*/
 .u_bordered {
   border: 1px solid #d5d5d5;
   border-radius: 4px; }
 
+.fa.u_icon-gray:before {
+  color: #BBB; }
+
+.fa.u_icon-red:before {
+  color: #cf371f; }
+
+.fa.u_icon-green:before {
+  color: #4ab767; }
+
+.fa.u_icon-white:before {
+  color: #fff; }
+
 /* Text Utilities
- */
-.u_text-ellipsis, .ellipsis, .editor-playlist .editor-playlist-item .playlist-item-name span, .placeholder-item-name, .display-name span, .display-address span, .playlist-item-reference {
+   ========================================================================== 
+*/
+.u_text-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
@@ -7846,7 +7866,8 @@ All utilities have a prefix u_ added to them
   opacity: 1; }
 
 /* Padding Utilities
- */
+   ========================================================================== 
+*/
 .u_padding-lg {
   padding: 32px; }
 
@@ -7868,7 +7889,7 @@ All utilities have a prefix u_ added to them
   padding-left: 8px;
   padding-right: 8px; }
 
-.padding-lg-vertical {
+.u_padding-lg-vertical {
   padding-top: 32px;
   padding-bottom: 32px; }
 
@@ -7881,78 +7902,71 @@ All utilities have a prefix u_ added to them
   padding-bottom: 8px; }
 
 /* Margin Utilities
- */
-.add-left {
+   ========================================================================== 
+*/
+.u_margin-xs {
+  margin: 3px !important; }
+
+.u_margin-sm {
+  margin: 10px !important; }
+
+.u_margin-md {
+  margin: 20px !important; }
+
+.u_margin-lg {
+  margin: 40px !important; }
+
+.u_margin-left {
   margin-left: 10px !important; }
 
-.add-right {
+.u_margin-right {
   margin-right: 10px !important; }
 
-.remove-bottom {
-  margin-bottom: 0 !important; }
-
-.small-bottom {
-  margin-bottom: 3px !important; }
-
-.half-bottom {
-  margin-bottom: 10px !important; }
-
-.add-bottom {
-  margin-bottom: 20px !important; }
-
-.add-bottom-double {
-  margin-bottom: 40px !important; }
-
-.remove-top {
-  margin-top: 0 !important; }
-
-.small-top {
+.u_margin-xs-top {
   margin-top: 3px !important; }
 
-.half-top {
+.u_margin-sm-top {
   margin-top: 10px !important; }
 
-.add-top {
+.u_margin-md-top {
   margin-top: 20px !important; }
 
-.add-top-double {
+.u_margin-lg-top {
   margin-top: 40px !important; }
 
+.u_margin-xs-bottom {
+  margin-bottom: 3px !important; }
+
+.u_margin-sm-bottom {
+  margin-bottom: 10px !important; }
+
+.u_margin-md-bottom {
+  margin-bottom: 20px !important; }
+
+.u_margin-lg-bottom {
+  margin-bottom: 40px !important; }
+
 /* Clearing Utilities
- */
-.remove-radius {
+   ========================================================================== 
+*/
+.u_remove-radius {
   border-radius: 0 !important; }
 
-.remove-margin {
+.u_remove-margin {
   margin: 0 !important; }
 
-.remove-padding {
+.u_remove-padding {
   padding: 0 !important; }
 
-/* 
-==========================================================================
-==========================================================================
-==========================================================================
-DEPRECATE Old Utilities
-   ========================================================================== */
-.nowrap {
-  white-space: nowrap; }
+.u_remove-top {
+  margin-top: 0 !important; }
 
-.clickable {
-  cursor: pointer; }
+.u_remove-bottom {
+  margin-bottom: 0 !important; }
 
-.ahrefdisabled {
-  color: #AAAAAA;
-  cursor: default;
-  pointer-events: none;
-  text-decoration: none; }
-
-.highlighted {
-  background: #FFFFE0;
-  text-transform: uppercase;
-  font-weight: bold;
-  display: inline-block; }
-
+/* Alignment Utilities
+   ========================================================================== 
+*/
 .empty-state .tag {
   position: relative;
   top: 50%;
@@ -7960,49 +7974,26 @@ DEPRECATE Old Utilities
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.radio-vertical-align {
+/* Misc Utilities
+   ========================================================================== 
+*/
+.u_nowrap {
+  white-space: nowrap; }
+
+.u_clickable {
+  cursor: pointer; }
+
+.u_link-disabled {
+  color: #AAAAAA;
+  cursor: default;
+  pointer-events: none;
+  text-decoration: none; }
+
+.u_highlighted {
+  background: #FFFFE0;
+  text-transform: uppercase;
+  font-weight: bold;
   display: inline-block; }
-
-.radio-vertical-align input,
-.radio-vertical-align label {
-  display: inline-block;
-  vertical-align: middle; }
-
-.app-navigation svg {
-  width: 24px;
-  height: 24px;
-  background: red; }
-
-.app-navigation path:first-child {
-  fill: #4AB767; }
-
-.app-navigation path:last-child {
-  fill: #2D60AD; }
-
-.file-empty-state path {
-  fill: #969595;
-  opacity: .65; }
-
-svg:hover path {
-  fill: rgba(0, 0, 0, 0.7); }
-
-path {
-  fill: rgba(0, 0, 0, 0.4); }
-
-.fa.icon-gray:before {
-  color: #BBB; }
-
-.fa.icon-red:before {
-  color: #cf371f; }
-
-.fa.icon-green:before {
-  color: #4ab767; }
-
-.fa.icon-white:before {
-  color: #fff; }
-
-.text-white {
-  color: #FFF; }
 
 .row.sm-gutter, .support-app .ticket-list-table .sm-gutter.title-row, .support-app .ticket-list-table .sm-gutter.ticket {
   margin-left: -4px;
@@ -8021,30 +8012,6 @@ path {
 .row.no-gutter [class*='col-']:not(:last-child), .support-app .ticket-list-table .no-gutter.title-row [class*='col-']:not(:last-child), .support-app .ticket-list-table .no-gutter.ticket [class*='col-']:not(:last-child) {
   padding-right: 0px;
   padding-left: 0px; }
-
-.img-icon {
-  height: 24px;
-  width: 24px;
-  margin-top: -4px;
-  margin-right: -4px;
-  vertical-align: bottom;
-  display: inline-block;
-  margin-left: 5px;
-  background-size: 100%; }
-  .img-icon.img-icon-google-calendar {
-    background-image: url("https://s3.amazonaws.com/Rise-Images/Icons/logo_calendar_32px.png"); }
-
-/* Deprecate
- ========================================================================== 
- ========================================================================== 
- ========================================================================== 
- ========================================================================== 
- ========================================================================== */
-@media (max-width: 768px) {
-  .button-row .btn, .button-row .icon-nav label, .icon-nav .button-row label {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px; } }
 
 /* ==========================================================================
    font awesome
@@ -10542,7 +10509,10 @@ a[data-wysihtml5-command=underline].active {
   margin-top: 8px;
   margin-bottom: 0; }
 
-.navbar .navbar-nav > li > a.btn-link:hover, .navbar .navbar-nav > li > a.btn-link:focus, .navbar .navbar-nav > li > a.btn-link:active, .navbar .navbar-nav > li > button.btn-link:hover, .navbar .navbar-nav > li > button.btn-link:focus, .navbar .navbar-nav > li > button.btn-link:active {
+.navbar .navbar-nav > li > a.btn-link:hover, .navbar .navbar-nav > li > a.btn-link:focus, .navbar .navbar-nav > li > a.btn-link:active,
+.navbar .navbar-nav > li > button.btn-link:hover,
+.navbar .navbar-nav > li > button.btn-link:focus,
+.navbar .navbar-nav > li > button.btn-link:active {
   color: gray; }
 
 .navbar .navbar-brand .fa {
@@ -10575,6 +10545,17 @@ a[data-wysihtml5-command=underline].active {
     float: left; }
     .app-navigation ul > li > a .image img {
       height: 100%; }
+
+.app-navigation svg {
+  width: 24px;
+  height: 24px;
+  background: red; }
+
+.app-navigation path:first-child {
+  fill: #4AB767; }
+
+.app-navigation path:last-child {
+  fill: #2D60AD; }
 
 /* Small Devices, Tablets */
 @media (max-width: 767px) {
@@ -10703,7 +10684,10 @@ a[data-wysihtml5-command=underline].active {
     -webkit-border-radius: 72px;
     -moz-border-radius: 72px;
     border-radius: 72px; }
-  .authorization-modal p, .authorization-modal .btn, .authorization-modal .icon-nav label, .icon-nav .authorization-modal label {
+  .authorization-modal p,
+  .authorization-modal .btn,
+  .authorization-modal .icon-nav label, .icon-nav
+  .authorization-modal label {
     margin-top: 40px; }
 
 .user-profile-dropdown .dropdown-toggle .user-id span {
@@ -12410,8 +12394,10 @@ ul.tree ul li:last-child:before {
     text-overflow: ellipsis;
     height: 33px;
     border: 1px solid red; }
-  .pt-media-list li.folder span.ellipsis, .pt-media-list li.folder .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder span, .pt-media-list li.folder span.placeholder-item-name, .pt-media-list li.folder .display-name span, .display-name .pt-media-list li.folder span, .pt-media-list li.folder .display-address span, .display-address .pt-media-list li.folder span, .pt-media-list li.folder span.playlist-item-reference,
-  .pt-media-list li.disabled-item span.ellipsis,
+  .pt-media-list li.folder span.u_ellipsis-md, .pt-media-list li.folder .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id .pt-media-list li.folder span, .pt-media-list li.folder .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder span, .pt-media-list li.folder span.placeholder-item-name, .pt-media-list li.folder .display-name span, .display-name .pt-media-list li.folder span, .pt-media-list li.folder .display-address span, .display-address .pt-media-list li.folder span, .pt-media-list li.folder span.playlist-item-reference,
+  .pt-media-list li.disabled-item span.u_ellipsis-md,
+  .pt-media-list li.disabled-item .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id
+  .pt-media-list li.disabled-item span,
   .pt-media-list li.disabled-item .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name
   .pt-media-list li.disabled-item span,
   .pt-media-list li.disabled-item span.placeholder-item-name,
@@ -12420,7 +12406,9 @@ ul.tree ul li:last-child:before {
   .pt-media-list li.disabled-item .display-address span, .display-address
   .pt-media-list li.disabled-item span,
   .pt-media-list li.disabled-item span.playlist-item-reference,
-  .pt-media-list li.single-item span.ellipsis,
+  .pt-media-list li.single-item span.u_ellipsis-md,
+  .pt-media-list li.single-item .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id
+  .pt-media-list li.single-item span,
   .pt-media-list li.single-item .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name
   .pt-media-list li.single-item span,
   .pt-media-list li.single-item span.placeholder-item-name,
@@ -12429,7 +12417,9 @@ ul.tree ul li:last-child:before {
   .pt-media-list li.single-item .display-address span, .display-address
   .pt-media-list li.single-item span,
   .pt-media-list li.single-item span.playlist-item-reference,
-  .pt-media-list li.placeholder-item span.ellipsis,
+  .pt-media-list li.placeholder-item span.u_ellipsis-md,
+  .pt-media-list li.placeholder-item .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id
+  .pt-media-list li.placeholder-item span,
   .pt-media-list li.placeholder-item .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name
   .pt-media-list li.placeholder-item span,
   .pt-media-list li.placeholder-item span.placeholder-item-name,
@@ -12442,10 +12432,10 @@ ul.tree ul li:last-child:before {
     margin-left: 7px;
     font-size: 11px; }
 
-.pt-media-list li.folder span.ellipsis, .pt-media-list li.folder .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder span, .pt-media-list li.folder span.placeholder-item-name, .pt-media-list li.folder .display-name span, .display-name .pt-media-list li.folder span, .pt-media-list li.folder .display-address span, .display-address .pt-media-list li.folder span, .pt-media-list li.folder span.playlist-item-reference {
+.pt-media-list li.folder span.u_ellipsis-md, .pt-media-list li.folder .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id .pt-media-list li.folder span, .pt-media-list li.folder .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder span, .pt-media-list li.folder span.placeholder-item-name, .pt-media-list li.folder .display-name span, .display-name .pt-media-list li.folder span, .pt-media-list li.folder .display-address span, .display-address .pt-media-list li.folder span, .pt-media-list li.folder span.playlist-item-reference {
   font-size: 11px; }
 
-.pt-media-list li.folder-extended span.ellipsis, .pt-media-list li.folder-extended .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended span.placeholder-item-name, .pt-media-list li.folder-extended .display-name span, .display-name .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended .display-address span, .display-address .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended span.playlist-item-reference {
+.pt-media-list li.folder-extended span.u_ellipsis-md, .pt-media-list li.folder-extended .navbar-default li.user-profile-dropdown .user-id span, .navbar-default li.user-profile-dropdown .user-id .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended .editor-playlist .editor-playlist-item .playlist-item-name span, .editor-playlist .editor-playlist-item .playlist-item-name .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended span.placeholder-item-name, .pt-media-list li.folder-extended .display-name span, .display-name .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended .display-address span, .display-address .pt-media-list li.folder-extended span, .pt-media-list li.folder-extended span.playlist-item-reference {
   width: 29%; }
 
 .pt-media-list li.folder span.image-folder-info {
@@ -13398,6 +13388,10 @@ tr.blocked-file {
   padding: 4px;
   max-height: calc(100vh - 300px);
   width: 100%; }
+
+.file-empty-state path {
+  fill: #969595;
+  opacity: .65; }
 
 #store-modal-frame {
   position: absolute;
