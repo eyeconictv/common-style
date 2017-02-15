@@ -11668,11 +11668,6 @@ li.dropdown-header {
     vertical-align: middle;
     padding: 12px 8px;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     cursor: pointer; }
     .table .table-body .table-body__row > .table-body__cell:first-child input {
       display: inline-block; }
@@ -11696,13 +11691,6 @@ li.dropdown-header {
     .table .table-body .table-body__row > .table-body__cell > span {
       display: inline-block;
       vertical-align: middle; }
-    .table .table-body .table-body__row > .table-body__cell.table-body__cell-text-select {
-      -webkit-user-select: text;
-      -khtml-user-select: text;
-      -moz-user-select: text;
-      -ms-user-select: text;
-      user-select: text;
-      cursor: text; }
   .table.table--sortable .table-body .table-body__row > .table-body__cell {
     cursor: move; }
   .table.table--sortable .table-body .table-body__row:hover > .table-body__cell {
