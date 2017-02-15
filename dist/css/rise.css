@@ -11638,7 +11638,6 @@ li.dropdown-header {
    ========================================================================== */
 .table {
   width: 100%;
-  font-size: 14px;
   margin-bottom: 0; }
   .table .table-header .table-header__row > .table-header__cell {
     padding: 8px; }
@@ -14014,6 +14013,12 @@ tr.blocked-file {
 .store-footer li > a {
   padding: 8px 0;
   display: block; }
+
+.form-quantity-selector .form-control {
+  width: 50px; }
+
+.form-quantity-selector .form-group {
+  margin: 0; }
 
 /* ==========================================================================
    Store Navigation
