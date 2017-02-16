@@ -14005,6 +14005,10 @@ tr.blocked-file {
 .form-quantity-selector .form-control {
   width: 50px; }
 
+.form-quantity-selector .form-control[readonly] {
+  cursor: pointer;
+  background-color: #FFF; }
+
 .form-quantity-selector .form-group {
   margin: 0; }
 

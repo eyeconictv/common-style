@@ -18,6 +18,10 @@
 	.form-control {
 		width: 50px;
 	}
+	.form-control[readonly] {
+		cursor: pointer;
+		background-color: #FFF;
+	}
 	.form-group {
 		margin:0;
 	}
