@@ -11638,7 +11638,6 @@ li.dropdown-header {
    ========================================================================== */
 .table {
   width: 100%;
-  font-size: 14px;
   margin-bottom: 0; }
   .table .table-header .table-header__row > .table-header__cell {
     padding: 8px; }
@@ -11669,11 +11668,6 @@ li.dropdown-header {
     vertical-align: middle;
     padding: 12px 8px;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     cursor: pointer; }
     .table .table-body .table-body__row > .table-body__cell:first-child input {
       display: inline-block; }
@@ -11697,13 +11691,6 @@ li.dropdown-header {
     .table .table-body .table-body__row > .table-body__cell > span {
       display: inline-block;
       vertical-align: middle; }
-    .table .table-body .table-body__row > .table-body__cell.table-body__cell-text-select {
-      -webkit-user-select: text;
-      -khtml-user-select: text;
-      -moz-user-select: text;
-      -ms-user-select: text;
-      user-select: text;
-      cursor: text; }
   .table.table--sortable .table-body .table-body__row > .table-body__cell {
     cursor: move; }
   .table.table--sortable .table-body .table-body__row:hover > .table-body__cell {
@@ -14015,6 +14002,16 @@ tr.blocked-file {
   padding: 8px 0;
   display: block; }
 
+.form-quantity-selector .form-control {
+  width: 50px; }
+
+.form-quantity-selector .form-control[readonly] {
+  cursor: pointer;
+  background-color: #FFF; }
+
+.form-quantity-selector .form-group {
+  margin: 0; }
+
 /* ==========================================================================
    Store Navigation
    ========================================================================== */
@@ -15006,10 +15003,6 @@ a.mfp-iframe:hover:after {
   margin-top: 0px; }
   .shopping-cart .alert.ship-to-restriction h5, .shopping-cart .support-app .ship-to-restriction.support-time h5, .support-app .shopping-cart .ship-to-restriction.support-time h5 {
     margin-top: 0; }
-
-.shopping-cart .subscriptions .btn .table-body__row > .table-body__cell, .shopping-cart .subscriptions .icon-nav label .table-body__row > .table-body__cell, .icon-nav .shopping-cart .subscriptions label .table-body__row > .table-body__cell,
-.shopping-cart .purchases .table-body__row > .table-body__cell {
-  vertical-align: top; }
 
 .shopping-cart .subscriptions .btn .buttons .btn, .shopping-cart .subscriptions .icon-nav label .buttons .btn, .icon-nav .shopping-cart .subscriptions label .buttons .btn, .shopping-cart .subscriptions .btn .buttons .icon-nav label, .icon-nav .shopping-cart .subscriptions .btn .buttons label, .shopping-cart .subscriptions .icon-nav label .buttons label, .icon-nav .shopping-cart .subscriptions label .buttons label,
 .shopping-cart .purchases .buttons .btn,

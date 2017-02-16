@@ -13,3 +13,16 @@
   padding: 8px 0;
   display: block;
 }
+
+.form-quantity-selector {
+	.form-control {
+		width: 50px;
+	}
+	.form-control[readonly] {
+		cursor: pointer;
+		background-color: #FFF;
+	}
+	.form-group {
+		margin:0;
+	}
+}
