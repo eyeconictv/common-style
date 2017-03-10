@@ -26,3 +26,9 @@
 		margin:0;
 	}
 }
+
+.display-licensing-modal {
+  	.scrollable-list {
+    	max-height: calc(100vh - 440px);
+  	}
+}
