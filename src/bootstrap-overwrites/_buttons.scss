@@ -38,10 +38,19 @@
 }
 
 .btn-toggle {
-    display: inline;
+    // display: inline;
+    display: none;
+    &.active {
+        display: inline-block !important;
+        color: #333;
+        background-color: #e8e8e8;
+        border-color: #CCC;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 }
 
-.button-row { //?
+.button-row { 
     @media (max-width: $screen-sm) {
         .btn {
             display: block;

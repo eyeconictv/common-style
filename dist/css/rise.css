@@ -7061,7 +7061,14 @@ button.close {
     border-color: white; }
 
 .btn-toggle {
-  display: inline; }
+  display: none; }
+  .btn-toggle.active {
+    display: inline-block !important;
+    color: #333;
+    background-color: #e8e8e8;
+    border-color: #CCC;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 
 @media (max-width: 768px) {
   .button-row .btn, .button-row .icon-nav label, .icon-nav .button-row label {
@@ -11303,8 +11310,12 @@ li.dropdown-header {
   margin-top: 10px; }
 
 .icon-nav {
+  display: inline-block;
   color: #555;
-  line-height: 32px; }
+  line-height: 32px;
+  border-right: 1px solid #DDDDDD;
+  margin-right: 20px;
+  padding-right: 10px; }
   .icon-nav .btn-link {
     padding: 0;
     border-radius: 3px;
@@ -11326,6 +11337,13 @@ li.dropdown-header {
       margin-top: 6px;
       font-size: 12px;
       vertical-align: top; }
+
+.selected-count {
+  display: inline-block;
+  line-height: 32px;
+  border-right: 1px solid #DDD;
+  margin-right: 10px;
+  padding-right: 16px; }
 
 .custom-icon {
   display: inline-block;
@@ -13703,9 +13721,6 @@ tr.blocked-file {
   -webkit-box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0px 0px 56px 0px rgba(0, 0, 0, 0.15); }
-  .ph-block .icon-nav {
-    position: absolute;
-    top: 50%; }
   .ph-block img {
     width: 100%; }
   .ph-block:before {
