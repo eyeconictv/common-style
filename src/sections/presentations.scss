@@ -306,6 +306,15 @@ $panel-width: 290px;
   }
 }
 
+.active-onboard-mode {
+  .workspace-board {
+   height: calc(100vh - 225px);
+  }
+  .workspace-sidebar {
+    height: calc(100vh - 225px);
+  }
+}
+
 .placeholder-item-name {
   @extend .u_ellipsis-md;
   width: 180px;
