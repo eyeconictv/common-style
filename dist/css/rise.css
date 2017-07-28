@@ -15417,14 +15417,10 @@ a.mfp-iframe:hover:after {
 /* Media queries
    ========================================================================== */
 @media (min-width: 768px) {
-  .subscription-confirmation,
-  .purchase-invoice {
-    padding-left: 100px;
-    padding-right: 100px; }
-    .subscription-confirmation .header-details,
-    .purchase-invoice .header-details {
-      /* Display & Box Model */
-      margin-top: 0; } }
+  .subscription-confirmation .header-details,
+  .purchase-invoice .header-details {
+    /* Display & Box Model */
+    margin-top: 0; } }
 
 /* ==========================================================================
    Address Editor Modal
