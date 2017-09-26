@@ -11694,6 +11694,14 @@ li.dropdown-header {
   .grid-list h4 {
     font-size: 14px; } }
 
+/* Bullet List
+   ========================================================================== */
+.bullet-list ul li {
+  list-style-type: disc;
+  margin-left: 30px; }
+  .bullet-list ul li:first-child {
+    margin-top: 12px; }
+
 .store.grid-list {
   /* Small devices  */
   /* Medium devices  */
