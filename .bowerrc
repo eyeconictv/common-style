@@ -1,3 +1,4 @@
 {
-  "directory": "bower_components"
+  "directory": "bower_components",
+  "shorthand-resolver": "https://${GITHUB_TOKEN}@github.com/{{owner}}/{{package}}.git"
 }
