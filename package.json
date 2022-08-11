@@ -1,6 +1,6 @@
 {
   "name": "rv-common-style",
-  "version": "1.3.65",
+  "version": "1.3.65-spread-sheet",
   "description": "Common CSS/SASS styling to be shared across Rise Vision apps, widgets and components.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Rise-Vision/style-guide.git"
+    "url": "git://github.com/porcupine-plan/style-guide.git"
   },
-  "homepage": "https://github.com/Rise-Vision/style-guide"
+  "homepage": "https://github.com/porcupine-plan/style-guide"
 }
